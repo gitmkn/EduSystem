@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1"  targetRuntime="MyBatis3">
+    <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/ExpectationEduSystem" driverClass="com.mysql.jdbc.Driver" password="root" userId="root" />
+    <javaModelGenerator targetPackage="cn.makangning.enitity" targetProject="ExpectationEduSystem" />
+    <sqlMapGenerator targetPackage="cn.makangning.mapper" targetProject="ExpectationEduSystem" />
+    <javaClientGenerator targetPackage="cn.makangning.mapper" targetProject="ExpectationEduSystem" type="XMLMAPPER" />
+    <table schema="User" tableName="User">
+      <columnOverride column="id" property="id" />
+    </table>
+  </context>
+</generatorConfiguration>
