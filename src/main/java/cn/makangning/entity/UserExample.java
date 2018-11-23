@@ -1,4 +1,4 @@
-package cn.makangning.enitity;
+package cn.makangning.entity;
 
 import java.util.ArrayList;
 import java.util.List;

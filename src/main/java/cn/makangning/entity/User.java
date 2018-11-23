@@ -1,4 +1,4 @@
-package cn.makangning.enitity;
+package cn.makangning.entity;
 
 public class User {
     /**

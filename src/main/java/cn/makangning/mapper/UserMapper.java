@@ -1,9 +1,10 @@
 package cn.makangning.mapper;
 
-import cn.makangning.enitity.User;
-import cn.makangning.enitity.UserExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import cn.makangning.entity.User;
+import cn.makangning.entity.UserExample;
 
 public interface UserMapper {
     /**
