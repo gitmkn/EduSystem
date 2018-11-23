@@ -1,4 +1,4 @@
-package cn.maknagning.controller;
+package cn.makangning.controller;
 
 import java.util.List;
 
