@@ -18,6 +18,6 @@ public class Test {
 //		}
 		int i = 1;
 		User user = userService.findById(i);
-		System.out.println(user);
+//		System.out.println(user);
 	}
 }
