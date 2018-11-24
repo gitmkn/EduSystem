@@ -12,3 +12,8 @@
 0:0:0:0:0:0:0:1 - - [24/Nov/2018:15:29:51 +0800] "GET /user/get.action HTTP/1.1" 404 949 http-bio-8089-exec-1 817
 0:0:0:0:0:0:0:1 - - [24/Nov/2018:15:32:02 +0800] "GET /user/get.action HTTP/1.1" 404 949 http-bio-8089-exec-2 782
 0:0:0:0:0:0:0:1 - - [24/Nov/2018:15:33:37 +0800] "GET /user/get.action HTTP/1.1" 404 999 http-bio-8089-exec-1 1024
+0:0:0:0:0:0:0:1 - - [24/Nov/2018:20:28:41 +0800] "GET /user/login.action HTTP/1.1" 500 4373 http-bio-8089-exec-1 1192
+0:0:0:0:0:0:0:1 - - [24/Nov/2018:20:32:41 +0800] "GET /user/login.action HTTP/1.1" 404 1003 http-bio-8089-exec-1 1259
+0:0:0:0:0:0:0:1 - - [24/Nov/2018:20:34:49 +0800] "GET /user/login.action HTTP/1.1" 500 4331 http-bio-8089-exec-1 1116
+0:0:0:0:0:0:0:1 - - [24/Nov/2018:20:46:13 +0800] "GET /user/login.action HTTP/1.1" 404 1003 http-bio-8089-exec-2 1268
+0:0:0:0:0:0:0:1 - - [24/Nov/2018:20:46:49 +0800] "GET /user/login.action HTTP/1.1" 404 1003 http-bio-8089-exec-2 1070
