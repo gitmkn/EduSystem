@@ -1,0 +1,14 @@
+js{
+	core{
+		popper.min.js:浮动
+	}
+	plugin{
+		bootstrap-notify：通知
+		bootstrap-toggle：开关组件
+		jquery-ui-1.12.1.custom:组件动态
+	}
+	demo:警告提示
+	ready.min.js:进度条
+	
+}
+fonts：字体图标
