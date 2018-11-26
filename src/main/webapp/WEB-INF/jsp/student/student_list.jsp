@@ -7,7 +7,19 @@
 <title>期望教育教务系统</title>
 </head>
 <body>
-<%@ include file="head.jsp" %>
-<%@ include file="alert.jsp" %>
+	<div class="wrapper">
+		<%@ include file="../head.jsp" %>
+		<div class="main-panel">
+			<div class="content">
+				<div class="container-fluid">
+					<h4 class="page-title">学生管理</h4>
+					
+					
+					
+				</div>
+			</div>
+			<%@ include file="../footer.jsp" %>
+		</div>
+	</div>
 </body>
 </html>

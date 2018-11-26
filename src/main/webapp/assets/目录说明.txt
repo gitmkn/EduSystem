@@ -12,3 +12,4 @@ js{
 	
 }
 fonts：字体图标
+login:登录

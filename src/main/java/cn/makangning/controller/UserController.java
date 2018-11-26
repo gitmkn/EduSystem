@@ -26,4 +26,10 @@ public class UserController {
 		}
 		
 	}
+	
+	
+	@RequestMapping("index")
+	public String index() {
+		return "index";
+	}
 }

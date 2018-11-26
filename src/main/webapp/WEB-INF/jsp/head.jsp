@@ -180,15 +180,15 @@ content属性值 :
 				</div>
 			</div>
 			<ul class="nav">
-				<li class="nav-item active"><a href="index.html"> <i
+				<li class="nav-item active"><a href="${ pageContext.request.contextPath }/home/index"> <i
 						class="la la-dashboard"></i>
 						<p>首页</p> <span class="badge badge-count">5</span>
 				</a></li>
-				<li class="nav-item"><a href="components.html">
+				<li class="nav-item"><a href="${ pageContext.request.contextPath }/home/student">
 					<i class="la la-child"></i>
 						<p>学生管理</p> <span class="badge badge-count">14</span>
 				</a></li>
-				<li class="nav-item"><a href="forms.html"> <i
+				<li class="nav-item"><a href="${ pageContext.request.contextPath }/home/teacher"> <i
 						class="la la-smile-o"></i>
 						<p>教师管理</p> <span class="badge badge-count">50</span>
 				</a></li>
