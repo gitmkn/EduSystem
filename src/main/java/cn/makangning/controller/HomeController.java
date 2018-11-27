@@ -32,13 +32,22 @@ public class HomeController {
 		return "login";
 	}
 	
+	@RequestMapping("index")
+	public String index() {
+		//首页
+		return "index";
+	}
+	
 	@RequestMapping("student")
 	public String Student() {
+		//学生管理
 		return "student/student_list";
 	}
 	
 	@RequestMapping("teacher")
 	public String Teacher() {
+		//教师管理
 		return "teacher/teacher_list";
 	}
+
 }
