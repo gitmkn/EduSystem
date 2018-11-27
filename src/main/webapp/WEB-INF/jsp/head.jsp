@@ -13,7 +13,6 @@ content属性值 :
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>期望教育教务系统</title>
 <meta
 	content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
 	name='viewport' />
@@ -27,7 +26,10 @@ content属性值 :
 <body>
 	<div class="main-header">
 		<div class="logo-header">
-			<a href="index.html" class="logo"> 期望教育教务系统 </a>
+			<a href="${ pageContext.request.contextPath }/home/index" class="logo">
+			 <!-- 期望教育教务系统 -->
+			 <img src="${ pageContext.request.contextPath }/assets/img/logo.jpg" with="100" height="50">
+			  </a>
 			<button class="navbar-toggler sidenav-toggler ml-auto" type="button"
 				data-toggle="collapse" data-target="collapse"
 				aria-controls="sidebar" aria-expanded="false"
@@ -35,7 +37,7 @@ content属性值 :
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<button class="topbar-toggler more">
-				<i class="la la-ellipsis-v"></i>
+				<i class="la la-smile-o"></i>
 			</button>
 		</div>
 		<nav class="navbar navbar-header navbar-expand-lg">
@@ -214,6 +216,7 @@ content属性值 :
 				</a></li>
 			</ul>
 		</div>
+		
 	</div>
 
 </body>

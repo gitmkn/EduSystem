@@ -20,4 +20,7 @@
 	
     <!--文件访问配置-->
     <mvc:resources mapping="/assets/**" location="/assets/"></mvc:resources>
+    
+    
+   
 </beans>

@@ -2,6 +2,8 @@ package cn.makangning.controller;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,15 +18,17 @@ public class UserController {
 	private UserService userService;
 	
 	@RequestMapping("login")
-	public void login() {
+	public String login(String username,String password,HttpServletRequest request) {
+		System.out.println("login");
 		User user = new User();
-		user.setName("111");
-		user.setPassword("111");
+		user.setName(username);
+		user.setPassword(password);
 		List<User> list = userService.login(user);
 		for(User list2 : list) {
 			System.out.println(list2);
 		}
-		
+		System.out.println(list);
+		return "index";
 	}
 	
 	

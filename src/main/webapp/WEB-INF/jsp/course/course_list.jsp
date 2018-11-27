@@ -201,7 +201,7 @@
 										<button class="btn btn-primary btn-border btn-round" style="float:right;"   data-toggle="modal" data-target="#modalUpdate">
 										添加
 										</button>
-										<%@ include file="alert.jsp" %>
+										<%@ include file="course_add.jsp" %>
 									</p>
 								</div>
 							</div>

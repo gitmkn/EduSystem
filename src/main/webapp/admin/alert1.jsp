@@ -14,12 +14,12 @@
 				<div class="container-fluid">
 					<h4 class="page-title">首页</h4>
 					<div class="row">
-						<div class="nav-item update-pro">
+						<!-- <div class="nav-item update-pro"> -->
 							<button  data-toggle="modal" data-target="#modalUpdate">
 								<i class="la la-hand-pointer-o"></i>
-								<p>Update To Pro</p>
+								<!-- <p>Update To Pro</p> -->
 							</button>
-						</div>
+						<!-- </div> -->
 						<%@ include file="alert.jsp" %>
 					</div>
 				</div>

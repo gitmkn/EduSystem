@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("home")
 public class HomeController {
 	
+	@RequestMapping("index1")
+	public String Index1() {
+		return "index1";
+	}
+	
 	@RequestMapping("index")
 	public String Index() {
 		return "index";

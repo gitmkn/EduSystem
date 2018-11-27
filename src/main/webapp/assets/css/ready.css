@@ -5058,7 +5058,7 @@ body {
 .card {
   border-radius: 0px;
   background-color: #ffffff;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   -webkit-box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
   -moz-box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
   box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
@@ -5099,11 +5099,11 @@ body {
   margin-bottom: 0px;
 }
 .card .card-body {
-  padding: 15px 15px 10px 15px;
+  padding: 0px 15px 10px 15px;
 }
 .card .card-footer {
   background-color: transparent;
-  line-height: 30px;
+  line-height: 27px;
   border-top: 1px solid #ebedf2 !important;
   font-size: 14px;
 }
@@ -6511,7 +6511,10 @@ body {
 }
 
 /*     Responsive     */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 410px) {
+  .topbar-toggler{
+  	margin-top: 15px;
+  }
   .row-card-no-pd [class*=col-] .card:after {
     width: 0px !important;
   }
@@ -6521,8 +6524,37 @@ body {
   .row-card-no-pd .card:last-child {
     border-bottom-width: 0px;
   }
+  table tr th:nth-child(3),
+  th:nth-child(4),
+  td:nth-child(3),
+  td:nth-child(4) {
+  display: none;
+  }
+  
+}
+@media screen and (max-width: 700px) {
+  .topbar-toggler{
+  	margin-top: 15px;
+  }
+  .row-card-no-pd [class*=col-] .card:after {
+    width: 0px !important;
+  }
+  .row-card-no-pd .card {
+    border-bottom-width: 1px;
+  }
+  .row-card-no-pd .card:last-child {
+    border-bottom-width: 0px;
+  }
+  table tr th:nth-child(4),
+  td:nth-child(4) {
+  display: none;
+  }
+  
 }
 @media screen and (min-width: 992px) {
+  .topbar-toggler{
+  	margin-top:15px;
+  }
   .main-header .logo-header {
     line-height: 52px;
   }
@@ -6536,6 +6568,9 @@ body {
   }
 }
 @media screen and (max-width: 991px) {
+  .topbar-toggler{
+  	margin-top: 15px;
+  }
   .sidebar {
     position: fixed;
     left: 0 !important;

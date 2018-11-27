@@ -8,6 +8,7 @@
 <html>
 <head>
 	<title>404</title>
+	<link rel="icon" type="image/x-icon" href="${ pageContext.request.contextPath }/assets/img/favicon.ico" />
 	<link href="${ pageContext.request.contextPath }/assets/css/404.css" rel="stylesheet" type="text/css" />
 </head>
 <body style="background-color: #f1f4f8;">
@@ -16,7 +17,7 @@
 		<img src="${ pageContext.request.contextPath }/assets/img/404_03.png">
 	</div>
 	<div class="fh">
-		<a href="${ pageContext.request.contextPath }/home/index.action">
+		<a href="${ pageContext.request.contextPath }/home/index">
 			<img src="${ pageContext.request.contextPath }/assets/img/404_06.png">
 		</a>
 	</div>
@@ -33,7 +34,7 @@
 					countDown(secs)
 				}, 1000);
 			} else {
-				window.location.href = '${ pageContext.request.contextPath }/home/index.action';
+				window.location.href = '${ pageContext.request.contextPath }/home/index';
 			}
 		}
 		countDown(5);
