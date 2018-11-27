@@ -8,7 +8,7 @@
 </head>
 <body>
 <a href="${ pageContext.request.contextPath }/admin/login">登录</a>
-<form action="${ pageContext.request.contextPath }/user/login" method="post">
+<form action="${ pageContext.request.contextPath }/home/login" method="post">
 	<input type="text" name="username" ><br>
 	<input type="password" name="password"><br>
 	<input type="submit"> 

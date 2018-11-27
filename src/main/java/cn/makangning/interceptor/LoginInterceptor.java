@@ -13,14 +13,14 @@ public class LoginInterceptor implements HandlerInterceptor{
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
 		// TODO Auto-generated method stub
-//		HttpSession httpSession = request.getSession();
-//        Object obj = httpSession.getAttribute("userinfo");
-//        if(obj != null){
-//            return  true;
-//        }else {
-//            request.getRequestDispatcher("/WEB-INF/jsp/index1.jsp").forward(request,response);
-//        }
-        return true;
+		HttpSession session = request.getSession();
+        Object obj = session.getAttribute("userinfo");
+        if(obj != null){
+            return  true;
+        }else {
+            request.getRequestDispatcher("/WEB-INF/jsp/login.jsp").forward(request,response);
+        }
+        return false;
 	}
 
 	@Override

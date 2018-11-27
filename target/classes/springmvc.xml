@@ -21,6 +21,16 @@
     <!--文件访问配置-->
     <mvc:resources mapping="/assets/**" location="/assets/"></mvc:resources>
     
-    
+    <!-- 拦截器配置 -->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <!-- 拦截 -->
+            <mvc:mapping path="/home/**"/>
+            <!-- 不拦截 -->
+            <mvc:exclude-mapping path="/home/login/**"></mvc:exclude-mapping>
+            <!-- 拦截器路径 -->
+            <bean class="cn.makangning.interceptor.LoginInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
    
 </beans>
