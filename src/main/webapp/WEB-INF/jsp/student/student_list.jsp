@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -23,31 +24,35 @@
 						<div class="col-md-12">
 							<div class="card">
 								<!-- <div class="card-header">
-									<div class="card-title">Table Head States
-										<span class="badge badge-danger"  style="float:right;">Danger</span>
+									<div class="card-title">标题
+										<span class="badge badge-danger"  style="float:right;">提交</span>
 									</div>
 								</div> -->
+							
 								<div class="card-body">
-									<table class="table table-head-bg-primary mt-4 table-hover">
+									<table class="table table-head-bg-primary change2 mt-4 table-hover" style="text-align:center;">
 										<thead>
 											<tr>
-												<th>姓名</th>
-												<th scope="col">性别</th>
-												<th scope="col">电话</th>
-												<th scope="col">地址</th>
-												<th scope="col">操作</th>
+												<th width="10%">姓名</th>
+												<th width="5%">性别</th>
+												<th width="10%">电话</th>
+												<th width="40%">地址</th>
+												<th width="10%">学校名</th>
+												<th width="5%">状态</th>
+												<th width="20%">操作</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
-												<td>1</td>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
+												<td>马康宁</td>
+												<td>男</td>
+												<td>13470016983</td>
+												<td>丹东市元宝区辽东学院</td>
+												<td>辽东学院</td>
+												<td>正常</td>
 												<td>
 													<span class="badge badge-primary">
 														<i class="la la-check"></i>
-														<i class="la la-send"></i>
 													</span>
 													<span class="badge badge-warning">
 														<i class="la la-pencil-square"></i>
@@ -62,21 +67,25 @@
 												<td>Mark</td>
 												<td>Otto</td>
 												<td>@mdo</td>
+												<td>Otto</td>
+												<td>@mdo</td>
 												<td>
 													<span class="badge badge-primary">
-														<i class="la la-check"></i>
-														<i class="la la-send"></i>
+														<i class="la la-check" title="恢复正常"></i>
+														<i class="la la-send" title="办理离司"></i>
 													</span>
-													<span class="badge badge-warning">
+													<a href="#" class="badge badge-warning"  title="详细信息修改" data-toggle="modal" data-target="#update">
 														<i class="la la-pencil-square"></i>
-													</span>
-													<a href="#" class="badge badge-danger">
+													</a>
+													<a href="#" class="badge badge-danger"   title="删除">
 													<i class="la la-remove"></i>
 													</a>
 												</td>
 											</tr><tr>
 												<td>1</td>
 												<td>Mark</td>
+												<td>Otto</td>
+												<td>@mdo</td>
 												<td>Otto</td>
 												<td>@mdo</td>
 												<td>
@@ -96,21 +105,6 @@
 												<td>Mark</td>
 												<td>Otto</td>
 												<td>@mdo</td>
-												<td>
-													<span class="badge badge-primary">
-														<i class="la la-check"></i>
-														<i class="la la-send"></i>
-													</span>
-													<span class="badge badge-warning">
-														<i class="la la-pencil-square"></i>
-													</span>
-													<a href="#" class="badge badge-danger">
-													<i class="la la-remove"></i>
-													</a>
-												</td>
-											</tr><tr>
-												<td>1</td>
-												<td>Mark</td>
 												<td>Otto</td>
 												<td>@mdo</td>
 												<td>
@@ -130,21 +124,6 @@
 												<td>Mark</td>
 												<td>Otto</td>
 												<td>@mdo</td>
-												<td>
-													<span class="badge badge-primary">
-														<i class="la la-check"></i>
-														<i class="la la-send"></i>
-													</span>
-													<span class="badge badge-warning">
-														<i class="la la-pencil-square"></i>
-													</span>
-													<a href="#" class="badge badge-danger">
-													<i class="la la-remove"></i>
-													</a>
-												</td>
-											</tr><tr>
-												<td>1</td>
-												<td>Mark</td>
 												<td>Otto</td>
 												<td>@mdo</td>
 												<td>
@@ -162,6 +141,46 @@
 											</tr><tr>
 												<td>1</td>
 												<td>Mark</td>
+												<td>Otto</td>
+												<td>@mdo</td>
+												<td>Otto</td>
+												<td>@mdo</td>
+												<td>
+													<span class="badge badge-primary">
+														<i class="la la-check"></i>
+														<i class="la la-send"></i>
+													</span>
+													<span class="badge badge-warning">
+														<i class="la la-pencil-square"></i>
+													</span>
+													<a href="#" class="badge badge-danger">
+													<i class="la la-remove"></i>
+													</a>
+												</td>
+											</tr><tr>
+												<td>1</td>
+												<td>Mark</td>
+												<td>Otto</td>
+												<td>@mdo</td>
+												<td>Otto</td>
+												<td>@mdo</td>
+												<td>
+													<span class="badge badge-primary">
+														<i class="la la-check"></i>
+														<i class="la la-send"></i>
+													</span>
+													<span class="badge badge-warning">
+														<i class="la la-pencil-square"></i>
+													</span>
+													<a href="#" class="badge badge-danger">
+													<i class="la la-remove"></i>
+													</a>
+												</td>
+											</tr><tr>
+												<td>1</td>
+												<td>Mark</td>
+												<td>Otto</td>
+												<td>@mdo</td>
 												<td>Otto</td>
 												<td>@mdo</td>
 												<td>
@@ -201,12 +220,13 @@
 										<button class="btn btn-primary btn-border btn-round" style="float:right;"   data-toggle="modal" data-target="#modalUpdate">
 										添加
 										</button>
-										<%@ include file="alert.jsp" %>
 									</p>
 								</div>
 							</div>
 						</div>
 					</div>
+					<%@ include file="student_add.jsp" %>
+					<%@ include file="student_update.jsp" %>
 <!-- ================================================================================================ -->				
 				</div>
 			</div>

@@ -53,7 +53,7 @@ content属性值 :
 				</div>
 			</form>
 			<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
-				<li class="nav-item dropdown hidden-caret"><a
+				<%-- <li class="nav-item dropdown hidden-caret"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false"> <i class="la la-envelope"></i>
@@ -117,13 +117,13 @@ content属性值 :
 						<li><a class="see-all" href="javascript:void(0);"> <strong>See
 									all notifications</strong> <i class="la la-angle-right"></i>
 						</a></li>
-					</ul></li>
-				<li class="nav-item dropdown"><a
-					class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"
+					</ul></li> --%>
+				<li class="nav-item dropdown">
+					<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"
 					aria-expanded="false"> <img
 						src="${ pageContext.request.contextPath }/assets/img/profile.jpg"
 						alt="user-img" width="36" class="img-circle"><span>Hizrian</span></span>
-				</a>
+					</a>
 					<ul class="dropdown-menu dropdown-user">
 						<li>
 							<div class="user-box">
@@ -146,7 +146,8 @@ content属性值 :
 						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="#"><i class="fa fa-power-off"></i>
 							退出</a>
-					</ul> <!-- /.dropdown-user --></li>
+					</ul><!-- /.dropdown-user -->
+				</li>
 			</ul>
 		</div>
 		</nav>
@@ -169,13 +170,14 @@ content属性值 :
 					<div class="collapse in" id="collapseExample" aria-expanded="true"
 						style="">
 						<ul class="nav">
-							<li><a href="#profile"> <span class="link-collapse">My
-										Profile</span>
+							<li><a href="#profile">
+								<span class="link-collapse">我的资料修改</span>
 							</a></li>
-							<li><a href="#edit"> <span class="link-collapse">Edit
-										Profile</span>
+							<li><a href="${ pageContext.request.contextPath }/home/personal"> 
+								<span class="link-collapse">授权管理</span>
 							</a></li>
-							<li><a href="#settings"> <span class="link-collapse">Settings</span>
+							
+							<li><a href="#settings"> <span class="link-collapse">退出</span>
 							</a></li>
 						</ul>
 					</div>
@@ -188,31 +190,31 @@ content属性值 :
 				</a></li>
 				<li class="nav-item"><a href="${ pageContext.request.contextPath }/home/student">
 					<i class="la la-child"></i>
-						<p>学生管理</p> <span class="badge badge-count">14</span>
+					<p>学生管理</p> <span class="badge badge-count">14</span>
 				</a></li>
-				<li class="nav-item"><a href="${ pageContext.request.contextPath }/home/teacher"> <i
-						class="la la-smile-o"></i>
-						<p>教师管理</p> <span class="badge badge-count">50</span>
+				<li class="nav-item"><a href="${ pageContext.request.contextPath }/home/teacher">
+					<i class="la la-smile-o"></i>
+					<p>教师管理</p> <span class="badge badge-count">50</span>
 				</a></li>
-				<li class="nav-item"><a href="tables.html"> <i
-						class="la la-th-list"></i>
-						<p>课程管理</p> <span class="badge badge-count">6</span>
+				<li class="nav-item"><a href="${ pageContext.request.contextPath }/home/course">
+					<i class="la la-th-list"></i>
+					<p>课程管理</p> <span class="badge badge-count">6</span>
 				</a></li>
-				<li class="nav-item"><a href="notifications.html"> <i
-						class="la la-bank"></i>
-						<p>教室管理</p> <span class="badge badge-success">3</span>
+				<li class="nav-item"><a href="${ pageContext.request.contextPath }/home/classroom">
+					<i class="la la-bank"></i>
+					<p>教室管理</p> <span class="badge badge-success">3</span>
 				</a></li>
-				<li class="nav-item"><a href="typography.html"> <i
-						class="la la-th"></i>
-						<p>排课管理</p> <span class="badge badge-danger">25</span>
+				<li class="nav-item"><a href="${ pageContext.request.contextPath }/home/arrangement">
+					<i class="la la-th"></i>
+					<p>排课管理</p> <span class="badge badge-danger">25</span>
 				</a></li>
-				<li class="nav-item"><a href="typography.html"> <i
-						class="la la-list-alt"></i>
-						<p>成绩管理</p> <span class="badge badge-danger">25</span>
+				<li class="nav-item"><a href="${ pageContext.request.contextPath }/home/achievements">
+					<i class="la la-list-alt"></i>
+					<p>成绩管理</p> <span class="badge badge-danger">25</span>
 				</a></li>
-				<li class="nav-item"><a href="typography.html"> <i
-						class="la la-calculator"></i>
-						<p>收费管理</p> <span class="badge badge-danger">25</span>
+				<li class="nav-item"><a href="${ pageContext.request.contextPath }/home/charges">
+					<i class="la la-calculator"></i>
+					<p>收费管理</p>
 				</a></li>
 			</ul>
 		</div>

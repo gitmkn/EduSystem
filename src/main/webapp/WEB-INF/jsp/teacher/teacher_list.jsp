@@ -28,20 +28,43 @@
 									</div>
 								</div> -->
 								<div class="card-body">
-									<table class="table table-head-bg-primary mt-4 table-hover">
+									<table class="table table-head-bg-primary change2 mt-4 table-hover" style="text-align:center;">
 										<thead>
 											<tr>
-												<th scope="col">姓名</th>
-												<th scope="col">性别</th>
-												<th scope="col">电话</th>
-												<th scope="col">地址</th>
-												<th scope="col">操作</th>
+												<th width="10%">姓名</th>
+												<th width="5%">性别</th>
+												<th width="10%">电话</th>
+												<th width="40%">地址</th>
+												<th width="10%">来源</th>
+												<th width="5%">状态</th>
+												<th width="20%">操作</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
+												<td>马康宁</td>
+												<td>男</td>
+												<td>13470016983</td>
+												<td>丹东市元宝区辽东学院</td>
+												<td>辽东学院</td>
+												<td>正常</td>
+												<td>
+													<span class="badge badge-primary">
+														<i class="la la-check"></i>
+													</span>
+													<a class="badge badge-warning"  data-toggle="modal" data-target="#update">
+														<i class="la la-pencil-square"></i>
+													</a>
+													<a href="#" class="badge badge-danger">
+													<i class="la la-remove"></i>
+													</a>
+												</td>
+											</tr>
+											<tr>
 												<td>1</td>
 												<td>Mark</td>
+												<td>Otto</td>
+												<td>@mdo</td>
 												<td>Otto</td>
 												<td>@mdo</td>
 												<td>
@@ -56,10 +79,11 @@
 													<i class="la la-remove"></i>
 													</a>
 												</td>
-											</tr>
-											<tr>
+											</tr><tr>
 												<td>1</td>
 												<td>Mark</td>
+												<td>Otto</td>
+												<td>@mdo</td>
 												<td>Otto</td>
 												<td>@mdo</td>
 												<td>
@@ -74,10 +98,11 @@
 													<i class="la la-remove"></i>
 													</a>
 												</td>
-											</tr>
-											<tr>
+											</tr><tr>
 												<td>1</td>
 												<td>Mark</td>
+												<td>Otto</td>
+												<td>@mdo</td>
 												<td>Otto</td>
 												<td>@mdo</td>
 												<td>
@@ -92,10 +117,11 @@
 													<i class="la la-remove"></i>
 													</a>
 												</td>
-											</tr>
-											<tr>
+											</tr><tr>
 												<td>1</td>
 												<td>Mark</td>
+												<td>Otto</td>
+												<td>@mdo</td>
 												<td>Otto</td>
 												<td>@mdo</td>
 												<td>
@@ -110,10 +136,11 @@
 													<i class="la la-remove"></i>
 													</a>
 												</td>
-											</tr>
-											<tr>
+											</tr><tr>
 												<td>1</td>
 												<td>Mark</td>
+												<td>Otto</td>
+												<td>@mdo</td>
 												<td>Otto</td>
 												<td>@mdo</td>
 												<td>
@@ -128,10 +155,11 @@
 													<i class="la la-remove"></i>
 													</a>
 												</td>
-											</tr>
-											<tr>
+											</tr><tr>
 												<td>1</td>
 												<td>Mark</td>
+												<td>Otto</td>
+												<td>@mdo</td>
 												<td>Otto</td>
 												<td>@mdo</td>
 												<td>
@@ -146,46 +174,11 @@
 													<i class="la la-remove"></i>
 													</a>
 												</td>
-											</tr>
-											<tr>
+											</tr><tr>
 												<td>1</td>
 												<td>Mark</td>
 												<td>Otto</td>
 												<td>@mdo</td>
-												<td>
-													<span class="badge badge-primary">
-														<i class="la la-check"></i>
-														<i class="la la-send"></i>
-													</span>
-													<span class="badge badge-warning">
-														<i class="la la-pencil-square"></i>
-													</span>
-													<a href="#" class="badge badge-danger">
-													<i class="la la-remove"></i>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td>1</td>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-												<td>
-													<span class="badge badge-primary">
-														<i class="la la-check"></i>
-														<i class="la la-send"></i>
-													</span>
-													<span class="badge badge-warning">
-														<i class="la la-pencil-square"></i>
-													</span>
-													<a href="#" class="badge badge-danger">
-													<i class="la la-remove"></i>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td>1</td>
-												<td>Mark</td>
 												<td>Otto</td>
 												<td>@mdo</td>
 												<td>
@@ -222,12 +215,16 @@
 												</a>
 											</li>
 										</ul>
-										<button class="btn btn-primary btn-border btn-round" style="float:right;">添加</button>
+										<button class="btn btn-primary btn-border btn-round" style="float:right;" data-toggle="modal" data-target="#modalUpdate">
+										添加
+										</button>
 									</p>
 								</div>
 							</div>
 						</div>
 					</div>
+					<%@ include file="teacher_add.jsp" %>
+					<%@ include file="teacher_update.jsp" %>
 <!-- ================================================================================================ -->	
 				</div>
 			</div>

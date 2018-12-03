@@ -2,6 +2,11 @@ achievements{
 	:成绩列表
 }
 
+
+
+arrangement{
+	:排课管理
+}
 -------------------------
 Charges{
 	:收费列表
@@ -33,7 +38,7 @@ error{
 student{
 	student_list:学生列表
 	student_add:学生添加
-	:学生修改
+	student_update:学生信息修改
 
 }
 
@@ -41,8 +46,13 @@ student{
 teacher{
 	teacher_list:教师列表
 	teacher_add:教师添加
-	:教师修改
+	teacher_update:学生信息修改
 
 }
 
 --------------------------
+
+user{
+	personal:个人信息
+	authorization:授权管理
+}

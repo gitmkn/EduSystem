@@ -6524,15 +6524,29 @@ body {
   .row-card-no-pd .card:last-child {
     border-bottom-width: 0px;
   }
-  table tr th:nth-child(3),
-  th:nth-child(4),
-  td:nth-child(3),
-  td:nth-child(4) {
+  .change1 tr th:nth-child(2),
+  th:nth-child(3),
+  td:nth-child(2),
+  td:nth-child(3){
   display: none;
   }
-  
+  .change2 tr th:nth-child(2),
+  th:nth-child(3),
+  th:nth-child(4),
+  th:nth-child(5),
+  td:nth-child(2),
+  td:nth-child(3),
+  td:nth-child(4),
+  td:nth-child(5) {
+  display: none;
+  }
+  .form-inline .col-form-label{
+  	display: none;
+  	
+  }
 }
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 450px) {
   .topbar-toggler{
   	margin-top: 15px;
   }
@@ -6545,11 +6559,59 @@ body {
   .row-card-no-pd .card:last-child {
     border-bottom-width: 0px;
   }
-  table tr th:nth-child(4),
+  .change2 tr th:nth-child(2),
+  th:nth-child(3),
+  th:nth-child(5),
+  td:nth-child(2),
+  td:nth-child(3),
+  td:nth-child(5) {
+  display: none;
+  }
+  .form-inline .col-form-label{
+  	display: none;
+  	
+  }
+}
+@media screen and (max-width: 600px) {
+  .topbar-toggler{
+  	margin-top: 15px;
+  }
+  .row-card-no-pd [class*=col-] .card:after {
+    width: 0px !important;
+  }
+  .row-card-no-pd .card {
+    border-bottom-width: 1px;
+  }
+  .row-card-no-pd .card:last-child {
+    border-bottom-width: 0px;
+  }
+  .change2 tr th:nth-child(4),
   td:nth-child(4) {
   display: none;
   }
-  
+   .form-inline .col-form-label{
+  	display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .topbar-toggler{
+  	margin-top: 15px;
+  }
+  .row-card-no-pd [class*=col-] .card:after {
+    width: 0px !important;
+  }
+  .row-card-no-pd .card {
+    border-bottom-width: 1px;
+  }
+  .row-card-no-pd .card:last-child {
+    border-bottom-width: 0px;
+  }
+   .form-inline .col-form-label{
+  	display: none;
+  }
+  .change2 tr th:nth-child(4),td:nth-child(4) {
+  display: none;
+  }
 }
 @media screen and (min-width: 992px) {
   .topbar-toggler{
@@ -6566,6 +6628,7 @@ body {
   .sidebar:hover .scroll-element {
     opacity: 1;
   }
+
 }
 @media screen and (max-width: 991px) {
   .topbar-toggler{

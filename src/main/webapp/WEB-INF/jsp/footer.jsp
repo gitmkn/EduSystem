@@ -17,9 +17,12 @@
 			</ul>
 			</nav>
 			<div class="copyright ml-auto">
-				2018&copy;,期望教育教务系统 <i class="la la-heart heart text-danger"></i> by
-				<a href="#">期望教育教务系统</a> <a href="#" target="_blank" title="期望教育教务系统">期望教育教务系统</a>
-				<a href="#" title="期望教育教务系统" target="_blank">期望教育教务系统</a>
+			<ul class="nav">
+				<li class="nav-item"><lable class="nav-link" href="#"> 2018 &copy;</lable></li>
+				<li class="nav-item"><a class="nav-link" href="#">期望教育教务系统 </a></li>
+			</ul>
+				<!-- 2018 &copy; 期望教育教务系统   
+				<a href="#" title="期望教育教务系统" target="_blank">期望教育教务系统</a> -->
 			</div>
 		</div>
 	</footer>
