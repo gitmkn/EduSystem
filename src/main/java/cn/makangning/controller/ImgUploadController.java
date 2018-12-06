@@ -12,6 +12,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
+/***
+ * 文件长传
+ * @author mkn 
+ * strFolder文件保存路径
+ * 文件大小在springmvc.xml中修改
+ */
 @Controller
 public class ImgUploadController {
 
