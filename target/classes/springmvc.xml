@@ -27,7 +27,7 @@
             <!-- 拦截 -->
             <mvc:mapping path="/home/**"/>
             <!-- 不拦截 -->
-            <mvc:exclude-mapping path="/home/login/**"></mvc:exclude-mapping>
+            <mvc:exclude-mapping path="/login/**"></mvc:exclude-mapping>
             <!-- 拦截器路径 -->
             <bean class="cn.makangning.interceptor.LoginInterceptor"></bean>
         </mvc:interceptor>

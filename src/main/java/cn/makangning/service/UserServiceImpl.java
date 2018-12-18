@@ -15,7 +15,7 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private UserMapper UserMapper;
 	@Override
-	public List<User> login(User user) {
+	public User login(User user) {
 		// TODO Auto-generated method stub
 		UserExample userExample = new UserExample();
 		Criteria criteria = userExample.createCriteria();

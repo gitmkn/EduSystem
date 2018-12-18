@@ -6524,20 +6524,10 @@ body {
   .row-card-no-pd .card:last-child {
     border-bottom-width: 0px;
   }
-  .change1 tr th:nth-child(2),
-  th:nth-child(3),
-  td:nth-child(2),
-  td:nth-child(3){
+  .change1 tr .th2{
   display: none;
   }
-  .change2 tr th:nth-child(2),
-  th:nth-child(3),
-  th:nth-child(4),
-  th:nth-child(5),
-  td:nth-child(2),
-  td:nth-child(3),
-  td:nth-child(4),
-  td:nth-child(5) {
+  .change2 tr .th1 {
   display: none;
   }
   .form-inline .col-form-label{
@@ -6559,12 +6549,7 @@ body {
   .row-card-no-pd .card:last-child {
     border-bottom-width: 0px;
   }
-  .change2 tr th:nth-child(2),
-  th:nth-child(3),
-  th:nth-child(5),
-  td:nth-child(2),
-  td:nth-child(3),
-  td:nth-child(5) {
+  .change2 tr .th2 {
   display: none;
   }
   .form-inline .col-form-label{
@@ -6585,8 +6570,7 @@ body {
   .row-card-no-pd .card:last-child {
     border-bottom-width: 0px;
   }
-  .change2 tr th:nth-child(4),
-  td:nth-child(4) {
+  .change2 tr .th1 {
   display: none;
   }
    .form-inline .col-form-label{
@@ -6609,7 +6593,7 @@ body {
    .form-inline .col-form-label{
   	display: none;
   }
-  .change2 tr th:nth-child(4),td:nth-child(4) {
+  .change2 tr .th0 {
   display: none;
   }
 }

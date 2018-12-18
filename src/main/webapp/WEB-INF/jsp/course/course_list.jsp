@@ -15,7 +15,17 @@
 				<div class="container-fluid">
 					<h4 class="page-title"> 课程管理
 						<span class="badge badge-success"  style="float:right;" title="刷新">
-							<i class="la la-rotate-right"></i>
+							<!-- <i class="la la-rotate-right"></i> -->
+							<form class="navbar-left navbar-form nav-search mr-md-3" action="">
+				<div class="input-group">
+					<input type="text" placeholder="姓名、课程名..." class="form-control">
+					<div class="input-group-append">
+						<span class="input-group-text"> <i
+							class="la la-search search-icon"></i>
+						</span>
+					</div>
+				</div>
+			</form>
 						</span>
 					</h4>
 <!-- ================================================================================================ -->

@@ -2,7 +2,10 @@ E:\workspace\ExpectationEduSystem\src\main\java\cn\makangning\service\UserServic
 E:\workspace\ExpectationEduSystem\src\main\java\cn\makangning\interceptor\LoginInterceptor.java
 E:\workspace\ExpectationEduSystem\src\main\java\cn\makangning\controller\HomeController.java
 E:\workspace\ExpectationEduSystem\src\main\java\cn\makangning\mapper\UserMapper.java
+E:\workspace\ExpectationEduSystem\src\main\java\cn\makangning\controller\LoginController.java
 E:\workspace\ExpectationEduSystem\src\main\java\cn\makangning\entity\User.java
 E:\workspace\ExpectationEduSystem\src\main\java\cn\makangning\entity\UserExample.java
 E:\workspace\ExpectationEduSystem\src\main\java\cn\makangning\service\UserService.java
+E:\workspace\ExpectationEduSystem\src\main\java\cn\makangning\util\VerifyCode.java
+E:\workspace\ExpectationEduSystem\src\main\java\cn\makangning\util\Md5Util.java
 E:\workspace\ExpectationEduSystem\src\main\java\cn\makangning\controller\ImgUploadController.java
