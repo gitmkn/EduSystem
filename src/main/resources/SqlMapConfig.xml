@@ -11,7 +11,6 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 		<!-- 开启二级缓存 -->
 		<setting name="cacheEnabled" value="true"/>
 	</settings>
-	
 </configuration>  
 
 

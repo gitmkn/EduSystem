@@ -14,8 +14,9 @@ import cn.makangning.mapper.UserMapper;
 public class UserServiceImpl implements UserService {
 	@Autowired
 	private UserMapper userMapper;
+	
 	@Override
-	public User login(User user) {
+	public List<User> login(User user) {
 		// TODO Auto-generated method stub
 		UserExample userExample = new UserExample();
 		Criteria criteria = userExample.createCriteria();
@@ -36,5 +37,4 @@ public class UserServiceImpl implements UserService {
 		// TODO Auto-generated method stub
 		return userMapper.selectByPrimaryKey(id);
 	}
-
 }

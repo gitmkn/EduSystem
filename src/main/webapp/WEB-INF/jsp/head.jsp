@@ -37,7 +37,7 @@ content属性值 :
 		</div>
 		<nav class="navbar navbar-header navbar-expand-lg">
 		<div class="container-fluid">
-			<form class="navbar-left navbar-form nav-search mr-md-3" action="">
+			<!-- <form class="navbar-left navbar-form nav-search mr-md-3" action="">
 				<div class="input-group">
 					<input type="text" placeholder="姓名、课程名..." class="form-control">
 					<div class="input-group-append">
@@ -46,7 +46,7 @@ content属性值 :
 						</span>
 					</div>
 				</div>
-			</form>
+			</form> -->
 			<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
 				<%-- <li class="nav-item dropdown hidden-caret"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
@@ -117,7 +117,7 @@ content属性值 :
 					<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"
 					aria-expanded="false"> <img
 						src="${ pageContext.request.contextPath }/assets/image/profile.jpg"
-						alt="user-img" width="36" class="img-circle"><span>Hizrian</span></span>
+						alt="user-img" width="36" class="img-circle"><span>${ userinfo.name }</span></span>
 					</a>
 					<ul class="dropdown-menu dropdown-user">
 						<li>
@@ -128,8 +128,8 @@ content属性值 :
 										alt="user">
 								</div>
 								<div class="u-text">
-									<h4>马康宁</h4>
-									<p class="text-muted">1055482519@qq.com</p>
+									<h4>${ userinfo.name }</h4>
+									<p class="text-muted">${ userinfo.email }</p>
 									<a href="profile.html"
 										class="btn btn-rounded btn-danger btn-sm">查看资料</a>
 								</div>
@@ -139,7 +139,7 @@ content属性值 :
 						<a class="dropdown-item" href="#"><i class="ti-settings"></i>
 							我的</a>
 						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#"><i class="fa fa-power-off"></i>
+						<a class="dropdown-item" href="${ pageContext.request.contextPath }/user/exit"><i class="fa fa-power-off"></i>
 							退出</a>
 					</ul><!-- /.dropdown-user -->
 				</li>
@@ -232,5 +232,12 @@ content属性值 :
 <script src="${ pageContext.request.contextPath }/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 <script src="${ pageContext.request.contextPath }/assets/js/ready.min.js"></script>
 <script src="${ pageContext.request.contextPath }/assets/js/demo.js"></script>
+<script language="javascript">
+	//防止页面后退
+	history.pushState(null, null, document.URL);
+	window.addEventListener('popstate', function () {
+		history.pushState(null, null, document.URL);
+	});
+</script>
 </html>
 
