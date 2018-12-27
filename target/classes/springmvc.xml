@@ -33,9 +33,9 @@
         </mvc:interceptor>
     </mvc:interceptors>
     
-    <!-- 文件上传 maxUploadSize为最大文件80k -->
+    <!-- 文件上传 maxUploadSize为最大文件1024k -->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-    	<property name="maxUploadSize" value="80000"></property>
+    	<property name="maxUploadSize" value="1024000"></property>
     	<property name="defaultEncoding" value="UTF-8"></property>
 	</bean>
    

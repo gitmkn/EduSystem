@@ -1,12 +1,22 @@
 package cn.makangning.controller;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import cn.makangning.entity.User;
+import cn.makangning.service.UserService;
 
 @Controller
 @RequestMapping("home")
 public class HomeController {
 	
+	@Autowired
+	private UserService userService;
 	
 	@RequestMapping("index")
 	public String Index() {
@@ -15,8 +25,10 @@ public class HomeController {
 	}
 	
 	@RequestMapping("student")
-	public String Student() {
+	public String Student(Model model) {
 		//学生管理
+		List<User> userList = userService.userList(0);
+		model.addAttribute("userList", userList);
 		return "student/student_list";
 	}
 	
@@ -61,5 +73,10 @@ public class HomeController {
 		//收费管理
 		return "user/personal_list";
 	}
-
+	
+	@RequestMapping("login1")
+	public String login1() {
+		//收费管理
+		return "login1";
+	}
 }

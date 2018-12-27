@@ -13,15 +13,10 @@ content属性值 :
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta
-	content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
-	name='viewport' />
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/assets/css/bootstrap.min.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/assets/css/ready.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/assets/css/demo.css">
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+<link rel="stylesheet" href="${ pageContext.request.contextPath }/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="${ pageContext.request.contextPath }/assets/css/ready.css">
+<link rel="stylesheet" href="${ pageContext.request.contextPath }/assets/css/demo.css">
 </head>
 <body>
 	<div class="main-header">
@@ -121,7 +116,7 @@ content属性值 :
 				<li class="nav-item dropdown">
 					<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"
 					aria-expanded="false"> <img
-						src="${ pageContext.request.contextPath }/assets/img/profile.jpg"
+						src="${ pageContext.request.contextPath }/assets/image/profile.jpg"
 						alt="user-img" width="36" class="img-circle"><span>Hizrian</span></span>
 					</a>
 					<ul class="dropdown-menu dropdown-user">
@@ -129,7 +124,7 @@ content属性值 :
 							<div class="user-box">
 								<div class="u-img">
 									<img
-										src="${ pageContext.request.contextPath }/assets/img/profile.jpg"
+										src="${ pageContext.request.contextPath }/assets/image/profile.jpg"
 										alt="user">
 								</div>
 								<div class="u-text">
@@ -154,10 +149,9 @@ content属性值 :
 	</div>
 	<div class="sidebar">
 		<div class="scrollbar-inner sidebar-wrapper">
-			<div class="user">
+			<%-- <div class="user">
 				<div class="photo">
-					<img
-						src="${ pageContext.request.contextPath }/assets/img/profile.jpg">
+					<img src="${ pageContext.request.contextPath }/assets/image/profile.jpg">
 				</div>
 				<div class="info">
 					<a class="" data-toggle="collapse" href="#collapseExample"
@@ -182,7 +176,7 @@ content属性值 :
 						</ul>
 					</div>
 				</div>
-			</div>
+			</div> --%>
 			<ul class="nav">
 				<li class="nav-item active"><a href="${ pageContext.request.contextPath }/home/index"> <i
 						class="la la-dashboard"></i>

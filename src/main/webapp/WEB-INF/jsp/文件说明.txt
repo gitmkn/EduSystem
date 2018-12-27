@@ -44,7 +44,7 @@ student{
 
 --------------------------
 teacher{
-	teacher_list:教师列表
+	teacher_list:教师列表 class="th0 th1 th2",th0最先隐藏其次th1,th2
 	teacher_add:教师添加
 	teacher_update:学生信息修改
 

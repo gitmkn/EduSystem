@@ -13,16 +13,28 @@ import cn.makangning.mapper.UserMapper;
 @Service
 public class UserServiceImpl implements UserService {
 	@Autowired
-	private UserMapper UserMapper;
+	private UserMapper userMapper;
 	@Override
 	public User login(User user) {
 		// TODO Auto-generated method stub
 		UserExample userExample = new UserExample();
 		Criteria criteria = userExample.createCriteria();
-		criteria.andNameEqualTo(user.getName());
+		criteria.andPhoneEqualTo(user.getPhone());
 		criteria.andPasswordEqualTo(user.getPassword());
 		userExample.or(criteria);
-		return UserMapper.selectByExample(userExample);
+		return userMapper.selectByExample(userExample);
+	}
+	
+	@Override
+	public List<User> userList(Integer type) {
+		// TODO Auto-generated method stub
+		return userMapper.selectUserList(type);
+	}
+
+	@Override
+	public User selectByPrimaryKey(int id) {
+		// TODO Auto-generated method stub
+		return userMapper.selectByPrimaryKey(id);
 	}
 
 }

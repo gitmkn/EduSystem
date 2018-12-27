@@ -37,10 +37,10 @@
 										<thead>
 											<tr>
 												<th width="10%">姓名</th>
-												<th width="5%">性别</th>
-												<th width="10%">电话</th>
-												<th width="40%">地址</th>
-												<th width="10%">来源</th>
+												<th class="th2" width="5%">性别</th>
+												<th class="th2" width="10%">电话</th>
+												<th class="th0 th1 th2" width="40%">地址</th>
+												<th class="th1 th2" width="10%">来源</th>
 												<th width="5%">状态</th>
 												<th width="20%">操作</th>
 											</tr>
@@ -48,10 +48,10 @@
 										<tbody>
 											<tr>
 												<td>马康宁</td>
-												<td>男</td>
-												<td>13470016983</td>
-												<td>丹东市元宝区辽东学院</td>
-												<td>辽东学院</td>
+												<td class="th2">男</td>
+												<td class="th2">13470016983</td>
+												<td class="th0 th1 th2">丹东市元宝区辽东学院</td>
+												<td class="th1 th2">辽东学院</td>
 												<td>正常</td>
 												<td>
 													<span class="badge badge-primary">
@@ -66,12 +66,12 @@
 												</td>
 											</tr>
 											<tr>
-												<td>1</td>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-												<td>Otto</td>
-												<td>@mdo</td>
+												<td>马康宁</td>
+												<td class="th2">男</td>
+												<td class="th2">13470016983</td>
+												<td class="th0 th1 th2">丹东市元宝区辽东学院</td>
+												<td class="th1 th2">辽东学院</td>
+												<td>正常</td>
 												<td>
 													<span class="badge badge-primary">
 														<i class="la la-check"></i>
@@ -85,12 +85,12 @@
 													</a>
 												</td>
 											</tr><tr>
-												<td>1</td>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-												<td>Otto</td>
-												<td>@mdo</td>
+												<td>马康宁</td>
+												<td class="th2">男</td>
+												<td class="th2">13470016983</td>
+												<td class="th0 th1 th2">丹东市元宝区辽东学院</td>
+												<td class="th1 th2">辽东学院</td>
+												<td>正常</td>
 												<td>
 													<span class="badge badge-primary">
 														<i class="la la-check"></i>
@@ -104,12 +104,12 @@
 													</a>
 												</td>
 											</tr><tr>
-												<td>1</td>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-												<td>Otto</td>
-												<td>@mdo</td>
+												<td>马康宁</td>
+												<td class="th2">男</td>
+												<td class="th2">13470016983</td>
+												<td class="th0 th1 th2">丹东市元宝区辽东学院</td>
+												<td class="th1 th2">辽东学院</td>
+												<td>正常</td>
 												<td>
 													<span class="badge badge-primary">
 														<i class="la la-check"></i>
@@ -123,12 +123,12 @@
 													</a>
 												</td>
 											</tr><tr>
-												<td>1</td>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-												<td>Otto</td>
-												<td>@mdo</td>
+												<td>马康宁</td>
+												<td class="th2">男</td>
+												<td class="th2">13470016983</td>
+												<td class="th0 th1 th2">丹东市元宝区辽东学院</td>
+												<td class="th1 th2">辽东学院</td>
+												<td>正常</td>
 												<td>
 													<span class="badge badge-primary">
 														<i class="la la-check"></i>
@@ -142,12 +142,12 @@
 													</a>
 												</td>
 											</tr><tr>
-												<td>1</td>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-												<td>Otto</td>
-												<td>@mdo</td>
+												<td>马康宁</td>
+												<td class="th2">男</td>
+												<td class="th2">13470016983</td>
+												<td class="th0 th1 th2">丹东市元宝区辽东学院</td>
+												<td class="th1 th2">辽东学院</td>
+												<td>正常</td>
 												<td>
 													<span class="badge badge-primary">
 														<i class="la la-check"></i>
@@ -161,12 +161,12 @@
 													</a>
 												</td>
 											</tr><tr>
-												<td>1</td>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-												<td>Otto</td>
-												<td>@mdo</td>
+												<td>马康宁</td>
+												<td class="th2">男</td>
+												<td class="th2">13470016983</td>
+												<td class="th0 th1 th2">丹东市元宝区辽东学院</td>
+												<td class="th1 th2">辽东学院</td>
+												<td>正常</td>
 												<td>
 													<span class="badge badge-primary">
 														<i class="la la-check"></i>
@@ -180,12 +180,12 @@
 													</a>
 												</td>
 											</tr><tr>
-												<td>1</td>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-												<td>Otto</td>
-												<td>@mdo</td>
+												<td>马康宁</td>
+												<td class="th2">男</td>
+												<td class="th2">13470016983</td>
+												<td class="th0 th1 th2">丹东市元宝区辽东学院</td>
+												<td class="th1 th2">辽东学院</td>
+												<td>正常</td>
 												<td>
 													<span class="badge badge-primary">
 														<i class="la la-check"></i>
