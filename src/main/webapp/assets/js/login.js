@@ -19,7 +19,7 @@ function blur(){
 				if(code == 0){
 					$("input[type='button']").attr("value","验证码错误");
 				}else{
-					$("input[type='button']").attr("value","验证码正确");
+//					$("input[type='button']").attr("value","验证码正确");
 					submit();
 				}
 			},
@@ -28,12 +28,7 @@ function blur(){
 			}
 		});
 	});
-}	
-
-$(function(){
-	submit();
-});
-
+}
 
 /*提交跳转*/
 function submit(){

@@ -82,7 +82,7 @@ public class LoginController {
 	@RequestMapping("Checkcode/{code}")
 	@ResponseBody
 	public int Checkcode(@PathVariable String code,HttpServletRequest request){
-		System.out.println("code");
+		System.out.println(code);
 		HttpSession session = request.getSession();
 		String verCode = (String) session.getAttribute("verCode");
 		if(code.equals(verCode)) {
