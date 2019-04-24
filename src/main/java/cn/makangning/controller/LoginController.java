@@ -40,9 +40,9 @@ public class LoginController {
 		
 		//md5加密
 		user.setPassword(new Md5Util().getMd5(user.getPassword()));
-		
+		//字符串转json
 		String jsonstr = JSON.toJSONString(user);
-		//System.out.println(jsonstr);
+		System.out.println(jsonstr);
 		
 		HttpSession session = request.getSession();
 		List<User> user2 = userService.login(user);
@@ -69,7 +69,7 @@ public class LoginController {
 		VerifyCode.output(bi,response.getOutputStream());//调用静态方法output()方法将图片保存在文件输出流中
 		String code = vc.getText();
 		session.setAttribute("verCode", code);
-		//System.out.println(vc.getText());//在控制台上打印验证码的文本值
+		System.out.println(vc.getText());//在控制台上打印验证码的文本值
 	}
 	
 	/**
@@ -81,6 +81,7 @@ public class LoginController {
 	@RequestMapping("Checkcode/{code}")
 	@ResponseBody
 	public int Checkcode(@PathVariable String code,HttpServletRequest request){
+		System.out.println("code");
 		HttpSession session = request.getSession();
 		String verCode = (String) session.getAttribute("verCode");
 		if(code.equals(verCode)) {

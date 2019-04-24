@@ -1,9 +1,8 @@
 
 /*登录、验证码请求*/
 $(function(){
-	
 	$("img").click(function(){
-		$("img").attr("src","/login/code?v="+Math.random());
+		$("img").attr("src",baseUrl+'/login/code?v='+Math.random());
 	});
 	blur();
 	
@@ -15,7 +14,7 @@ function blur(){
 	$("input[name='code']").blur(function(){
 		var code = $("input[name='code']").val();
 		$.post({
-			url:"/login/Checkcode/"+code,
+			url:baseUrl+"/login/Checkcode/"+code,
 			success:function(code){
 				if(code == 0){
 					$("input[type='button']").attr("value","验证码错误");
@@ -31,11 +30,16 @@ function blur(){
 	});
 }	
 
+$(function(){
+	submit();
+});
+
+
 /*提交跳转*/
 function submit(){
 	$("input[type='button']").click(function(){
 		$.post({
-			url:"/login/dologin",
+			url:baseUrl+"/login/dologin",
 			data:$('form').serializeArray(),
 			beforeSend:function(XMLHttpRequest){ 
 				$("input[type='button']").attr("value","加载中...");
@@ -45,7 +49,7 @@ function submit(){
 					$("input[type='button']").attr("value","密码错误");
 				}else{
 					$("input[type='button']").attr("value","登录");
-					window.document.location.href="/"+data;
+					window.document.location.href=baseUrl+"/"+data;
 				}
 			},
 			error:function(){
