@@ -42,11 +42,12 @@ public class LoginController {
 		user.setPassword(new Md5Util().getMd5(user.getPassword()));
 		//字符串转json
 		String jsonstr = JSON.toJSONString(user);
-		System.out.println(jsonstr);
+//		System.out.println(jsonstr);
 		
 		HttpSession session = request.getSession();
 		List<User> user2 = userService.login(user);
-		System.out.println(user2.get(0));
+		String userjson = JSON.toJSONString(user2.get(0));
+		System.out.println(userjson);
 		if(user2.size() > 0) {
 			session.setAttribute("userinfo", user2.get(0));
 			return "home/index";

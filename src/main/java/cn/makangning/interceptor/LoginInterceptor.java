@@ -16,7 +16,7 @@ public class LoginInterceptor implements HandlerInterceptor{
 		HttpSession session = request.getSession();
         Object obj = session.getAttribute("userinfo");
         if(obj != null){
-            return  true;
+            return true;
         }else {
             request.getRequestDispatcher("/WEB-INF/jsp/login.jsp").forward(request,response);
         }

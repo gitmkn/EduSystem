@@ -74,9 +74,9 @@ public class HomeController {
 		return "user/personal_list";
 	}
 	
-	@RequestMapping("login1")
+	@RequestMapping("login")
 	public String login1() {
-		//收费管理
-		return "login1";
+		//登录
+		return "login";
 	}
 }
