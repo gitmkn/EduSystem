@@ -55,5 +55,10 @@ public class UserServiceImpl implements UserService {
 		return userMapper.insert(user);
 	}
 
+	@Override
+	public int update(User user) {
+		// TODO Auto-generated method stub
+		return userMapper.updateByPrimaryKeySelective(user);
+	}
 
 }

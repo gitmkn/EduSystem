@@ -29,7 +29,7 @@
 									<div class="card-title">标题
 										<span class="badge badge-danger"  style="float:right;">提交</span>
 									</div>
-								</div> -->
+								</div>  -->
 							
 								<div class="card-body">
 									<table class="table table-head-bg-primary change2 mt-4 table-hover" style="text-align:center;">
@@ -67,7 +67,7 @@
 														<i class="la la-check"></i>
 													</span>
 												</c:if>
-													<a href="${ user.uid }" class="badge badge-warning"  data-toggle="modal" data-target="#update">
+													<a class="badge badge-warning"  data-toggle="modal" data-target="#update">
 														<i class="la la-pencil-square"></i>
 													</a>
 													<a href="#" class="badge badge-danger">

@@ -21,7 +21,7 @@
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
-				<form method="post">
+				<form id="addform" method="post">
 					<div class="modal-body">
 <!-- ===================================================================================================== -->
 						<div class="form-group form-inline">

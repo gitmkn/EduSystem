@@ -137,17 +137,19 @@ content属性值 :
 								<div class="u-text">
 									<h4>${ userinfo.name }</h4>
 									<p class="text-muted">${ userinfo.email }</p>
-									<a href="profile.html"
-										class="btn btn-rounded btn-danger btn-sm">查看资料</a>
+									<a class="btn btn-rounded btn-danger dropdown-item" data-toggle="modal" data-target="#userupdate">查看资料</a>
 								</div>
 							</div>
 						</li>
 						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#"><i class="ti-settings"></i>
-							我的</a>
+						<!-- <a class="dropdown-item" href="#"><i class="ti-settings"></i>
+							</a> -->
+							<a class="dropdown-item" data-toggle="modal" data-target="#passwordUpdate">
+								修改密码
+							</a>
 						<div class="dropdown-divider"></div>
 						<a class="dropdown-item"
-							href="${ pageContext.request.contextPath }/user/exit"><i
+							href="${ pageContext.request.contextPath }/home/exit"><i
 							class="fa fa-power-off"></i> 退出</a>
 					</ul> <!-- /.dropdown-user --></li>
 			</ul>
@@ -191,7 +193,7 @@ content属性值 :
 						<p>首页</p> <span class="badge badge-count">5</span>
 				</a></li>
 				<li class="nav-item"><a
-					href="${ pageContext.request.contextPath }/home/student"> <i
+					href="${ pageContext.request.contextPath }/students/student"> <i
 						class="la la-child"></i>
 						<p>学生管理</p> <span class="badge badge-count">14</span>
 				</a></li>
@@ -229,7 +231,8 @@ content属性值 :
 		</div>
 
 	</div>
-
+<%@ include file="updatepassword.jsp" %>
+<%@ include file="user.jsp" %>
 </body>
 <script
 	src="${ pageContext.request.contextPath }/assets/js/core/jquery.3.2.1.min.js"></script>
@@ -255,6 +258,7 @@ content属性值 :
 <script
 	src="${ pageContext.request.contextPath }/assets/js/ready.min.js"></script>
 <script src="${ pageContext.request.contextPath }/assets/js/demo.js"></script>
+<script src="${ pageContext.request.contextPath }/assets/js/head.js"></script>
 <script language="javascript">
 	//绝对路径，不可少
 	var baseUrl = '${pageContext.request.contextPath}';

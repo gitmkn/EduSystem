@@ -35,4 +35,11 @@ public interface UserService {
 	 * @return
 	 */
 	public int insert(User user);
+	/**
+	 * 用户信息修改(包括修改密码)
+	 * @param user
+	 * @return
+	 */
+	public int update(User user);
+
 }

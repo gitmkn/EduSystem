@@ -22,7 +22,7 @@
 					<div class="form-group form-inline">
 						<label for="inlineinput" class="col-md-3 col-form-label">唯一id</label>
 						<div class="col-md-9 p-0">
-							${ user.uid }
+							
 						</div>
 					</div>
 					
