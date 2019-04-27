@@ -18,7 +18,7 @@
 			</nav>
 			<div class="copyright ml-auto">
 			<ul class="nav">
-				<li class="nav-item"><lable class="nav-link" href="#"> 2018 &copy;</lable></li>
+				<li class="nav-item"><lable class="nav-link" href="#"> 2019 &copy;</lable></li>
 				<li class="nav-item"><a class="nav-link" href="#">期望教育教务系统 </a></li>
 			</ul>
 				<!-- 2018 &copy; 期望教育教务系统   

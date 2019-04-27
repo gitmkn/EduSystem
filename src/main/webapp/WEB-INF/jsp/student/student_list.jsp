@@ -17,9 +17,9 @@
 			<div class="content">
 				<div class="container-fluid">
 					<h4 class="page-title">学生管理
-						<span class="badge badge-success" style="float:right;" title="刷新">
+						<a href="javascript:location.reload();" class="badge badge-success" style="float:right;" title="刷新">
 							<i class="la la-rotate-right"></i>
-						</span>
+						</a>
 					</h4>
 <!-- ================================================================================================ -->
 					<div class="row">

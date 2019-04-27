@@ -43,14 +43,18 @@ public class LoginController {
 		//字符串转json
 		String jsonstr = JSON.toJSONString(user);
 //		System.out.println(jsonstr);
-		
-		HttpSession session = request.getSession();
-		List<User> user2 = userService.login(user);
-		String userjson = JSON.toJSONString(user2.get(0));
-		System.out.println(userjson);
-		if(user2.size() > 0) {
-			session.setAttribute("userinfo", user2.get(0));
-			return "home/index";
+		try {
+			HttpSession session = request.getSession();
+			List<User> user2 = userService.login(user);
+			String userjson = JSON.toJSONString(user2.get(0));
+			System.out.println(userjson);
+			if(user2.size() > 0) {
+				session.setAttribute("userinfo", user2.get(0));
+				return "home/index";
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("登录时发生错误（检查账号密码）");
 		}
 		return "errer";
 	}

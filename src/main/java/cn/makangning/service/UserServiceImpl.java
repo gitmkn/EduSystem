@@ -18,6 +18,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public List<User> login(User user) {
 		// TODO Auto-generated method stub
+		//当根据部分信息查询时
 		UserExample userExample = new UserExample();
 		Criteria criteria = userExample.createCriteria();
 		criteria.andPhoneEqualTo(user.getPhone());
@@ -37,4 +38,22 @@ public class UserServiceImpl implements UserService {
 		// TODO Auto-generated method stub
 		return userMapper.selectByPrimaryKey(id);
 	}
+	
+	@Override
+	public List<User> selectByPhone(Long phone) {
+		// TODO Auto-generated method stub
+		UserExample userExample = new UserExample();
+		Criteria criteria = userExample.createCriteria();
+		criteria.andPhoneEqualTo(phone);
+		userExample.or(criteria);
+		return userMapper.selectByExample(userExample);
+	}
+
+	@Override
+	public int insert(User user) {
+		// TODO Auto-generated method stub
+		return userMapper.insert(user);
+	}
+
+
 }

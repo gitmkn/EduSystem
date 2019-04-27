@@ -14,18 +14,24 @@ content属性值 :
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-<link rel="stylesheet" href="${ pageContext.request.contextPath }/assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="${ pageContext.request.contextPath }/assets/css/ready.css">
-<link rel="stylesheet" href="${ pageContext.request.contextPath }/assets/css/demo.css">
+<meta
+	content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+	name='viewport' />
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath }/assets/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath }/assets/css/ready.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath }/assets/css/demo.css">
 </head>
 <body>
 	<div class="main-header">
 		<div class="logo-header">
-			<a href="${ pageContext.request.contextPath }/home/index" class="logo">
-			 <!-- 期望教育教务系统 -->
-			 <img src="${ pageContext.request.contextPath }/assets/img/logo.jpg" with="100" height="50">
-			  </a>
+			<a href="${ pageContext.request.contextPath }/home/index"
+				class="logo"> <!-- 期望教育教务系统 --> <img
+				src="${ pageContext.request.contextPath }/assets/img/logo.jpg"
+				with="100" height="50">
+			</a>
 			<button class="navbar-toggler sidenav-toggler ml-auto" type="button"
 				data-toggle="collapse" data-target="collapse"
 				aria-controls="sidebar" aria-expanded="false"
@@ -114,18 +120,18 @@ content属性值 :
 									all notifications</strong> <i class="la la-angle-right"></i>
 						</a></li>
 					</ul></li> --%>
-				<li class="nav-item dropdown">
-					<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"
+				<li class="nav-item dropdown"><a
+					class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"
 					aria-expanded="false"> <img
-						src="${ pageContext.request.contextPath }/assets/image/profile.jpg"
+						src="${ pageContext.request.contextPath }/${ userinfo.img }"
 						alt="user-img" width="36" class="img-circle"><span>${ userinfo.name }</span></span>
-					</a>
+				</a>
 					<ul class="dropdown-menu dropdown-user">
 						<li>
 							<div class="user-box">
 								<div class="u-img">
 									<img
-										src="${ pageContext.request.contextPath }/assets/image/profile.jpg"
+										src="${ pageContext.request.contextPath }/${ userinfo.img }"
 										alt="user">
 								</div>
 								<div class="u-text">
@@ -140,10 +146,10 @@ content属性值 :
 						<a class="dropdown-item" href="#"><i class="ti-settings"></i>
 							我的</a>
 						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="${ pageContext.request.contextPath }/user/exit"><i class="fa fa-power-off"></i>
-							退出</a>
-					</ul><!-- /.dropdown-user -->
-				</li>
+						<a class="dropdown-item"
+							href="${ pageContext.request.contextPath }/user/exit"><i
+							class="fa fa-power-off"></i> 退出</a>
+					</ul> <!-- /.dropdown-user --></li>
 			</ul>
 		</div>
 		</nav>
@@ -179,64 +185,82 @@ content属性值 :
 				</div>
 			</div> --%>
 			<ul class="nav">
-				<li class="nav-item active"><a href="${ pageContext.request.contextPath }/home/index"> <i
+				<li class="nav-item active"><a
+					href="${ pageContext.request.contextPath }/home/index"> <i
 						class="la la-dashboard"></i>
 						<p>首页</p> <span class="badge badge-count">5</span>
 				</a></li>
-				<li class="nav-item"><a href="${ pageContext.request.contextPath }/home/student">
-					<i class="la la-child"></i>
-					<p>学生管理</p> <span class="badge badge-count">14</span>
+				<li class="nav-item"><a
+					href="${ pageContext.request.contextPath }/home/student"> <i
+						class="la la-child"></i>
+						<p>学生管理</p> <span class="badge badge-count">14</span>
 				</a></li>
-				<li class="nav-item"><a href="${ pageContext.request.contextPath }/home/teacher">
-					<i class="la la-smile-o"></i>
-					<p>教师管理</p> <span class="badge badge-count">50</span>
+				<li class="nav-item"><a
+					href="${ pageContext.request.contextPath }/home/teacher"> <i
+						class="la la-smile-o"></i>
+						<p>教师管理</p> <span class="badge badge-count">50</span>
 				</a></li>
-				<li class="nav-item"><a href="${ pageContext.request.contextPath }/home/course">
-					<i class="la la-th-list"></i>
-					<p>课程管理</p> <span class="badge badge-count">6</span>
+				<li class="nav-item"><a
+					href="${ pageContext.request.contextPath }/home/course"> <i
+						class="la la-th-list"></i>
+						<p>课程管理</p> <span class="badge badge-count">6</span>
 				</a></li>
-				<li class="nav-item"><a href="${ pageContext.request.contextPath }/home/classroom">
-					<i class="la la-bank"></i>
-					<p>教室管理</p> <span class="badge badge-success">3</span>
+				<li class="nav-item"><a
+					href="${ pageContext.request.contextPath }/home/classroom"> <i
+						class="la la-bank"></i>
+						<p>教室管理</p> <span class="badge badge-success">3</span>
 				</a></li>
-				<li class="nav-item"><a href="${ pageContext.request.contextPath }/home/arrangement">
-					<i class="la la-th"></i>
-					<p>排课管理</p> <span class="badge badge-danger">25</span>
+				<li class="nav-item"><a
+					href="${ pageContext.request.contextPath }/home/arrangement"> <i
+						class="la la-th"></i>
+						<p>排课管理</p> <span class="badge badge-danger">25</span>
 				</a></li>
-				<li class="nav-item"><a href="${ pageContext.request.contextPath }/home/achievements">
-					<i class="la la-list-alt"></i>
-					<p>成绩管理</p> <span class="badge badge-danger">25</span>
+				<li class="nav-item"><a
+					href="${ pageContext.request.contextPath }/home/achievements">
+						<i class="la la-list-alt"></i>
+						<p>成绩管理</p> <span class="badge badge-danger">25</span>
 				</a></li>
-				<li class="nav-item"><a href="${ pageContext.request.contextPath }/home/charges">
-					<i class="la la-calculator"></i>
-					<p>收费管理</p>
+				<li class="nav-item"><a
+					href="${ pageContext.request.contextPath }/home/charges"> <i
+						class="la la-calculator"></i>
+						<p>收费管理</p>
 				</a></li>
 			</ul>
 		</div>
-		
+
 	</div>
 
 </body>
-<script src="${ pageContext.request.contextPath }/assets/js/core/jquery.3.2.1.min.js"></script>
-<script src="${ pageContext.request.contextPath }/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-<script src="${ pageContext.request.contextPath }/assets/js/core/popper.min.js"></script>
-<script src="${ pageContext.request.contextPath }/assets/js/core/bootstrap.min.js"></script>
+<script
+	src="${ pageContext.request.contextPath }/assets/js/core/jquery.3.2.1.min.js"></script>
+<script
+	src="${ pageContext.request.contextPath }/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script
+	src="${ pageContext.request.contextPath }/assets/js/core/popper.min.js"></script>
+<script
+	src="${ pageContext.request.contextPath }/assets/js/core/bootstrap.min.js"></script>
 <!-- <script src="assets/js/plugin/chartist/chartist.min.js"></script>
 <script src="assets/js/plugin/chartist/plugin/chartist-plugin-tooltip.min.js"></script>
  -->
-<script src="${ pageContext.request.contextPath }/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
-<script src="${ pageContext.request.contextPath }/assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script
+	src="${ pageContext.request.contextPath }/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+<script
+	src="${ pageContext.request.contextPath }/assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
 <!-- <script src="assets/js/plugin/jquery-mapael/jquery.mapael.min.js"></script>
 <script src="assets/js/plugin/jquery-mapael/maps/world_countries.min.js"></script>
 <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
  -->
-<script src="${ pageContext.request.contextPath }/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-<script src="${ pageContext.request.contextPath }/assets/js/ready.min.js"></script>
+<script
+	src="${ pageContext.request.contextPath }/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+<script
+	src="${ pageContext.request.contextPath }/assets/js/ready.min.js"></script>
 <script src="${ pageContext.request.contextPath }/assets/js/demo.js"></script>
 <script language="javascript">
+	//绝对路径，不可少
+	var baseUrl = '${pageContext.request.contextPath}';
 	//防止页面后退
 	history.pushState(null, null, document.URL);
-	window.addEventListener('popstate', function () {
+	window.addEventListener('popstate', function() {
 		history.pushState(null, null, document.URL);
 	});
 </script>
