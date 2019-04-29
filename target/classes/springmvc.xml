@@ -26,6 +26,8 @@
         <mvc:interceptor>
             <!-- 拦截 -->
             <mvc:mapping path="/home/**"/>
+            <mvc:mapping path="/student/**"/>
+            <mvc:mapping path="/teacher/**"/>
             <!-- 不拦截 -->
             <mvc:exclude-mapping path="/login/**"></mvc:exclude-mapping>
             <!-- 拦截器路径 -->

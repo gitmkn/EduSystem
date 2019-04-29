@@ -12,7 +12,7 @@
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header bg-primary">
-					<h6 class="modal-title"><i class="la la-plus-circle"></i> 教师详细信息修改 </h6>
+					<h6 class="modal-title"><i class="la la-plus-circle"></i> 学生详细信息修改 </h6>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
@@ -22,7 +22,7 @@
 					<div class="form-group form-inline">
 						<label for="inlineinput" class="col-md-3 col-form-label">唯一id</label>
 						<div class="col-md-9 p-0">
-							123
+							
 						</div>
 					</div>
 					

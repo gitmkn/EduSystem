@@ -98,6 +98,13 @@ public class HomeController {
 	 * 修改密码
 	 * @return
 	 */
+	@RequestMapping("userupdate")
+	public int updateUser(User user) {
+		
+		return 1;
+	}
+	
+	
 	@RequestMapping("updatepassword")
 	public int update(User user) {
 		if(!"".equals(user.getPassword())&&!"null".equals(user.getPassword())) {

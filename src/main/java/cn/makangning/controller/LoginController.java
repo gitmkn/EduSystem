@@ -40,6 +40,7 @@ public class LoginController {
 		
 		//md5加密
 		user.setPassword(new Md5Util().getMd5(user.getPassword()));
+		user.setState(1);
 		//字符串转json
 		String jsonstr = JSON.toJSONString(user);
 //		System.out.println(jsonstr);

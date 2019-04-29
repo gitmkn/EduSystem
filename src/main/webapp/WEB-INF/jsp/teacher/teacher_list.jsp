@@ -1,11 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>期望教育教务系统</title>
 <link rel="icon" type="image/x-icon" href="${ pageContext.request.contextPath }/assets/img/favicon.ico" />
+<script type="text/javascript" src="${ pageContext.request.contextPath }/assets/js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="${ pageContext.request.contextPath }/assets/js/teacher.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -28,10 +31,11 @@
 						<div class="col-md-12">
 							<div class="card">
 								<!-- <div class="card-header">
-									<div class="card-title">Table Head States
-										<span class="badge badge-danger"  style="float:right;">Danger</span>
+									<div class="card-title">标题
+										<span class="badge badge-danger"  style="float:right;">提交</span>
 									</div>
-								</div> -->
+								</div>  -->
+							
 								<div class="card-body">
 									<table class="table table-head-bg-primary change2 mt-4 table-hover" style="text-align:center;">
 										<thead>
@@ -40,165 +44,43 @@
 												<th class="th2" width="5%">性别</th>
 												<th class="th2" width="10%">电话</th>
 												<th class="th0 th1 th2" width="40%">地址</th>
-												<th class="th1 th2" width="10%">来源</th>
+												<th class="th1 th2" width="10%">学校名</th>
 												<th width="5%">状态</th>
 												<th width="20%">操作</th>
 											</tr>
 										</thead>
 										<tbody>
-											<tr>
-												<td>马康宁</td>
-												<td class="th2">男</td>
-												<td class="th2">13470016983</td>
-												<td class="th0 th1 th2">丹东市元宝区辽东学院</td>
-												<td class="th1 th2">辽东学院</td>
-												<td>正常</td>
+										<c:forEach items="${ userList }" var="user1">
+										<tr>
+												<td>${ user1.name }</td>
+												<td class="th2">${ user1.sex }</td>
+												<td class="th2">${ user1.phone }</td>
+												<td class="th0 th1 th2">${ user1.address }</td>
+												<td class="th1 th2">${ user1.school }</td>
 												<td>
+												<c:if test="${ user1.state == 1 }">正常</c:if>
+												<c:if test="${ user1.state == 0 }">离司</c:if>
+												</td>
+												<td>
+												<c:if test="${ user1.state == 1 }">
+													<span class="badge badge-primary">
+														<i class="la la-send"></i>
+													</span>
+												</c:if>
+												<c:if test="${ user1.state == 0 }">
 													<span class="badge badge-primary">
 														<i class="la la-check"></i>
 													</span>
+												</c:if>
 													<a class="badge badge-warning"  data-toggle="modal" data-target="#update">
 														<i class="la la-pencil-square"></i>
 													</a>
 													<a href="#" class="badge badge-danger">
-													<i class="la la-remove"></i>
+														<i class="la la-remove"></i>
 													</a>
 												</td>
 											</tr>
-											<tr>
-												<td>马康宁</td>
-												<td class="th2">男</td>
-												<td class="th2">13470016983</td>
-												<td class="th0 th1 th2">丹东市元宝区辽东学院</td>
-												<td class="th1 th2">辽东学院</td>
-												<td>正常</td>
-												<td>
-													<span class="badge badge-primary">
-														<i class="la la-check"></i>
-														<i class="la la-send"></i>
-													</span>
-													<span class="badge badge-warning">
-														<i class="la la-pencil-square"></i>
-													</span>
-													<a href="#" class="badge badge-danger">
-													<i class="la la-remove"></i>
-													</a>
-												</td>
-											</tr><tr>
-												<td>马康宁</td>
-												<td class="th2">男</td>
-												<td class="th2">13470016983</td>
-												<td class="th0 th1 th2">丹东市元宝区辽东学院</td>
-												<td class="th1 th2">辽东学院</td>
-												<td>正常</td>
-												<td>
-													<span class="badge badge-primary">
-														<i class="la la-check"></i>
-														<i class="la la-send"></i>
-													</span>
-													<span class="badge badge-warning">
-														<i class="la la-pencil-square"></i>
-													</span>
-													<a href="#" class="badge badge-danger">
-													<i class="la la-remove"></i>
-													</a>
-												</td>
-											</tr><tr>
-												<td>马康宁</td>
-												<td class="th2">男</td>
-												<td class="th2">13470016983</td>
-												<td class="th0 th1 th2">丹东市元宝区辽东学院</td>
-												<td class="th1 th2">辽东学院</td>
-												<td>正常</td>
-												<td>
-													<span class="badge badge-primary">
-														<i class="la la-check"></i>
-														<i class="la la-send"></i>
-													</span>
-													<span class="badge badge-warning">
-														<i class="la la-pencil-square"></i>
-													</span>
-													<a href="#" class="badge badge-danger">
-													<i class="la la-remove"></i>
-													</a>
-												</td>
-											</tr><tr>
-												<td>马康宁</td>
-												<td class="th2">男</td>
-												<td class="th2">13470016983</td>
-												<td class="th0 th1 th2">丹东市元宝区辽东学院</td>
-												<td class="th1 th2">辽东学院</td>
-												<td>正常</td>
-												<td>
-													<span class="badge badge-primary">
-														<i class="la la-check"></i>
-														<i class="la la-send"></i>
-													</span>
-													<span class="badge badge-warning">
-														<i class="la la-pencil-square"></i>
-													</span>
-													<a href="#" class="badge badge-danger">
-													<i class="la la-remove"></i>
-													</a>
-												</td>
-											</tr><tr>
-												<td>马康宁</td>
-												<td class="th2">男</td>
-												<td class="th2">13470016983</td>
-												<td class="th0 th1 th2">丹东市元宝区辽东学院</td>
-												<td class="th1 th2">辽东学院</td>
-												<td>正常</td>
-												<td>
-													<span class="badge badge-primary">
-														<i class="la la-check"></i>
-														<i class="la la-send"></i>
-													</span>
-													<span class="badge badge-warning">
-														<i class="la la-pencil-square"></i>
-													</span>
-													<a href="#" class="badge badge-danger">
-													<i class="la la-remove"></i>
-													</a>
-												</td>
-											</tr><tr>
-												<td>马康宁</td>
-												<td class="th2">男</td>
-												<td class="th2">13470016983</td>
-												<td class="th0 th1 th2">丹东市元宝区辽东学院</td>
-												<td class="th1 th2">辽东学院</td>
-												<td>正常</td>
-												<td>
-													<span class="badge badge-primary">
-														<i class="la la-check"></i>
-														<i class="la la-send"></i>
-													</span>
-													<span class="badge badge-warning">
-														<i class="la la-pencil-square"></i>
-													</span>
-													<a href="#" class="badge badge-danger">
-													<i class="la la-remove"></i>
-													</a>
-												</td>
-											</tr><tr>
-												<td>马康宁</td>
-												<td class="th2">男</td>
-												<td class="th2">13470016983</td>
-												<td class="th0 th1 th2">丹东市元宝区辽东学院</td>
-												<td class="th1 th2">辽东学院</td>
-												<td>正常</td>
-												<td>
-													<span class="badge badge-primary">
-														<i class="la la-check"></i>
-														<i class="la la-send"></i>
-													</span>
-													<span class="badge badge-warning">
-														<i class="la la-pencil-square"></i>
-													</span>
-													<a href="#" class="badge badge-danger">
-													<i class="la la-remove"></i>
-													</a>
-												</td>
-											</tr>
+										</c:forEach>
 										</tbody>
 									</table>
 									<p class="demo">
@@ -220,7 +102,7 @@
 												</a>
 											</li>
 										</ul>
-										<button class="btn btn-primary btn-border btn-round" style="float:right;" data-toggle="modal" data-target="#modalUpdate">
+										<button class="btn btn-primary btn-border btn-round" style="float:right;"   data-toggle="modal" data-target="#modalUpdate">
 										添加
 										</button>
 									</p>
