@@ -29,7 +29,7 @@
 					<div class="form-group form-inline">
 						<label for="inlineinput" class="col-md-3 col-form-label">姓名</label>
 						<div class="col-md-9 p-0">
-							<input type="text" class="form-control input-full" value="马康宁">
+							<input type="text" name="name" class="form-control input-full" value="">
 						</div>
 					</div>
 					
@@ -54,13 +54,13 @@
 					<div class="form-group form-inline">
 						<label for="inlineinput" class="col-md-3 col-form-label">地址</label>
 						<div class="col-md-9 p-0">
-							<input type="text" class="form-control input-full" value="元宝区辽东学院">
+							<input type="text" name="address" class="form-control input-full" value="元宝区辽东学院">
 						</div>
 					</div>
 					<div class="form-group form-inline">
 						<label for="inlineinput" class="col-md-3 col-form-label">学校名</label>
 						<div class="col-md-9 p-0">
-							<input type="text" class="form-control input-full" value="辽东学院">
+							<input type="text" name="school" class="form-control input-full" value="">
 						</div>
 					</div>
 					
@@ -87,4 +87,10 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript">
+$(function() { 
+		alert(getId1+getId2+getId3+getId4+getId5);
+		
+	});
+</script>
 </html>

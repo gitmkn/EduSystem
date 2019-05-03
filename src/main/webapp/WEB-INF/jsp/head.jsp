@@ -232,7 +232,7 @@ content属性值 :
 
 	</div>
 <%@ include file="updatepassword.jsp" %>
-<%@ include file="user.jsp" %>
+<%@ include file="user/authorization.jsp" %>
 </body>
 <script
 	src="${ pageContext.request.contextPath }/assets/js/core/jquery.3.2.1.min.js"></script>

@@ -51,7 +51,7 @@
 										</thead>
 										<tbody>
 										<c:forEach items="${ userList }" var="user1">
-										<tr>
+										<tr class="myclass">
 												<td>${ user1.name }</td>
 												<td class="th2">${ user1.sex }</td>
 												<td class="th2">${ user1.phone }</td>
@@ -118,5 +118,25 @@
 			<%-- <%@ include file="../footer.jsp" %> --%>
 		</div>
 	</div>
+	
 </body>
+<script type="text/javascript">
+	$(function() { 
+		var tr ;
+		var getId1;
+		var getId2;
+		var getId3;
+		var getId4;
+		var getId5;
+		$(".myclass").click(function(){
+		   tr = $(this).closest('tr');//找到tr元素
+		   getId1 = tr.find('td:eq(0)').html();//找到td元素
+		   getId2 = tr.find('td:eq(1)').html();
+		   getId3 = tr.find('td:eq(2)').html();
+		   getId4 = tr.find('td:eq(3)').html();
+		   getId5 = tr.find('td:eq(4)').html();
+		   alert(getId1+getId2+getId3+getId4+getId5);
+		});
+	}); 
+	</script>
 </html>
