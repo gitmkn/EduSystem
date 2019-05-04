@@ -9,6 +9,7 @@
 <link rel="icon" type="image/x-icon" href="${ pageContext.request.contextPath }/assets/img/favicon.ico" />
 <script type="text/javascript" src="${ pageContext.request.contextPath }/assets/js/jquery-3.3.1.js"></script>
 <script type="text/javascript" src="${ pageContext.request.contextPath }/assets/js/teacher.js"></script>
+<script type="text/javascript" src="${ pageContext.request.contextPath }/assets/js/page.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -50,7 +51,7 @@
 												<!-- <th width="20%">操作</th> -->
 											</tr>
 										</thead>
-										<tbody>
+										<tbody id="tablepage">
 										<c:forEach items="${ userList }" var="user1">
 										<tr class="myclass"   data-toggle="modal" data-target="#update">
 												<td style="display:none;">${ user1.uid }</td>
@@ -84,8 +85,8 @@
 										</tbody>
 									</table>
 									<p class="demo">
-										<ul class="pagination pg-primary"  style="float:left;">
-											<li class="page-item">
+										<ul id="barcon" class="pagination pg-primary"  style="float:left;">
+											<!-- <li class="page-item">
 												<a class="page-link" href="#" aria-label="Previous">
 													<span aria-hidden="true">&laquo;</span>
 													<span class="sr-only">Previous</span>
@@ -100,7 +101,7 @@
 													<span aria-hidden="true">&raquo;</span>
 													<span class="sr-only">Next</span>
 												</a>
-											</li>
+											</li> -->
 										</ul>
 										<button class="btn btn-primary btn-border btn-round" style="float:right;"   data-toggle="modal" data-target="#modalUpdate">
 										添加
@@ -206,5 +207,9 @@
 		</div>
 	</div>
 </body>
-
+<script type="text/javascript" language="javascript">
+	window.onload = function() {
+		goPage(1, 5);
+	};
+</script>
 </html>
