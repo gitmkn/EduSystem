@@ -79,8 +79,8 @@
 <!-- ===================================================================================================== -->
 					</div>
 					<div class="modal-footer">
-						<span id="adderror" style="color: red;"></span> <input
-							type="button" id="add" class="btn btn-success" value="提交">
+						<span id="adderror" style="color: red;"></span>
+						<input type="button" id="add" class="btn btn-success" value="提交">
 						<input type="button" class="btn btn-secondary"
 							data-dismiss="modal" value="取消">
 					</div>
