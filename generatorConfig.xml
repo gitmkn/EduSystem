@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
-  <context id="context1"  targetRuntime="MyBatis3">
+  <context id="context1"  targetRuntime="MyBatis3simple">
     <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/ExpectationEduSystem" driverClass="com.mysql.jdbc.Driver" password="root" userId="root" />
     <javaModelGenerator targetPackage="cn.makangning.entity" targetProject="ExpectationEduSystem" />
     <sqlMapGenerator targetPackage="cn.makangning.mapper" targetProject="ExpectationEduSystem" />
     <javaClientGenerator targetPackage="cn.makangning.mapper" targetProject="ExpectationEduSystem" type="XMLMAPPER" />
-    <table schema="User" tableName="User">
-      <columnOverride column="id" property="id" />
+    <table schema="root" tableName="course">
+      <!-- <columnOverride column="" property="id" /> -->
     </table>
+    
+    
+   <!--  <table schema="root" tableName="classroom">
+      <columnOverride column="" property="id" />
+    </table> -->
+    
+    
+   <!--  <table schema="root" tableName="cost">
+      <columnOverride column="uid" property="user" javaType="cn.makangning.entity.User"/>
+      <columnOverride column="cid" property="course" javaType="cn.makangning.entity.Course"/>
+    </table> -->
+    
+     <!-- <table schema="root" tableName="schedule">
+      <columnOverride column="rid" property="classroom" javaType="cn.makangning.entity.Classroom"/>
+      <columnOverride column="cid" property="course" javaType="cn.makangning.entity.Course"/>
+      <columnOverride column="uid" property="user" javaType="cn.makangning.entity.User"/>
+    </table> -->
   </context>
 </generatorConfiguration>

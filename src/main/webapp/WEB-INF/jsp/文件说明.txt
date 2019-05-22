@@ -2,9 +2,7 @@ achievements{
 	:成绩列表
 }
 
-
-
-arrangement{
+Schedule{
 	:排课管理
 }
 -------------------------

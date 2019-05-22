@@ -203,27 +203,27 @@ content属性值 :
 						<p>教师管理</p> <span class="badge badge-count">50</span>
 				</a></li>
 				<li class="nav-item"><a
-					href="${ pageContext.request.contextPath }/home/course"> <i
+					href="${ pageContext.request.contextPath }/course/course"> <i
 						class="la la-th-list"></i>
 						<p>课程管理</p> <span class="badge badge-count">6</span>
 				</a></li>
 				<li class="nav-item"><a
-					href="${ pageContext.request.contextPath }/home/classroom"> <i
+					href="${ pageContext.request.contextPath }/classroom/classroom"> <i
 						class="la la-bank"></i>
 						<p>教室管理</p> <span class="badge badge-success">3</span>
 				</a></li>
 				<li class="nav-item"><a
-					href="${ pageContext.request.contextPath }/home/arrangement"> <i
+					href="${ pageContext.request.contextPath }/schedule/schedule"> <i
 						class="la la-th"></i>
 						<p>排课管理</p> <span class="badge badge-danger">25</span>
 				</a></li>
 				<li class="nav-item"><a
-					href="${ pageContext.request.contextPath }/home/achievements">
+					href="${ pageContext.request.contextPath }/achievements/achievements">
 						<i class="la la-list-alt"></i>
 						<p>成绩管理</p> <span class="badge badge-danger">25</span>
 				</a></li>
 				<li class="nav-item"><a
-					href="${ pageContext.request.contextPath }/home/charges"> <i
+					href="${ pageContext.request.contextPath }/cost/cost"> <i
 						class="la la-calculator"></i>
 						<p>收费管理</p>
 				</a></li>

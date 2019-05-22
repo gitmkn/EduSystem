@@ -77,8 +77,7 @@
 													<td class="th0 th1 th2">${ user1.email }</td>
 													<td class="th0 th1 th2">${ user1.address }</td>
 													<td class="th1 th2">${ user1.school }</td>
-													<td><c:if test="${ user1.state == 1 }">正常</c:if> <c:if
-															test="${ user1.state == 0 }">离司</c:if></td>
+													<td><c:if test="${ user1.state == 1 }">正常</c:if><c:if test="${ user1.state == 0 }">离司</c:if></td>
 													</td>
 													<%-- <td>
 												<c:if test="${ user.state == 1 }">

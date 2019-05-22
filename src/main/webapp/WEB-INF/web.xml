@@ -5,7 +5,7 @@
 	version="2.5">
   <display-name>ExpectationEduSystem</display-name>
   <welcome-file-list>
-    <welcome-file>/WEB-INF/jsp/login.jsp</welcome-file>
+    <welcome-file>/WEB-INF/login.jsp</welcome-file>
   </welcome-file-list>
   
   <servlet>
