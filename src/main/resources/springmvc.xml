@@ -27,7 +27,13 @@
             <!-- 拦截 -->
             <mvc:mapping path="/home/**"/>
             <mvc:mapping path="/student/**"/>
-            <!-- <mvc:mapping path="/teacher/**"/> -->
+            <mvc:mapping path="/teacher/**"/>
+            <mvc:mapping path="/classroom/**"/>
+            <mvc:mapping path="/cost/**"/>
+            <mvc:mapping path="/course/**"/>
+            <mvc:mapping path="/schedule/**"/>
+            <mvc:mapping path="/students/**"/>
+            <mvc:mapping path="/achievements/**"/>
             <!-- 不拦截 -->
             <mvc:exclude-mapping path="/login/**"></mvc:exclude-mapping>
             <!-- 拦截器路径 -->

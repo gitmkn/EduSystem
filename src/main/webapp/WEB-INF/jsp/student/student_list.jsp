@@ -31,15 +31,14 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="card">
-								<div class="card-header">
+								<!-- <div class="card-header">
 									<div class="card-title">
-										<!-- Table Head States -->
-										<form class="navbar-left navbar-form nav-search" action=""
-											style="float: left; width: 15%;">
+										Table Head States
+										<form class="navbar-left navbar-form nav-search" style="float: left; width: 15%;">
 											<div class="input-group">
-												<input type="text" placeholder="姓名、电话..."
+												<input type="text" name="title" placeholder="姓名、电话..."
 													class="form-control">
-												<div class="input-group-append">
+												<div id="searchbtn" class="input-group-append">
 													<a class="input-group-text"> <i
 														class="la la-search search-icon"></i>
 													</a>
@@ -48,7 +47,7 @@
 										</form>
 										<span class="badge badge-danger" style="float: right;">提交</span>
 									</div>
-								</div>
+								</div> -->
 
 								<div class="card-body">
 									<table
@@ -79,24 +78,6 @@
 													<td class="th1 th2">${ user1.school }</td>
 													<td><c:if test="${ user1.state == 1 }">正常</c:if><c:if test="${ user1.state == 0 }">离司</c:if></td>
 													</td>
-													<%-- <td>
-												<c:if test="${ user.state == 1 }">
-													<span class="badge badge-primary">
-														<i class="la la-send"></i>
-													</span>
-												</c:if>
-												<c:if test="${ user.state == 0 }">
-													<span class="badge badge-primary">
-														<i class="la la-check"></i>
-													</span>
-												</c:if>
-													<a class="badge badge-warning"  data-toggle="modal" data-target="#update">
-														<i class="la la-pencil-square"></i>
-													</a>
-													<a href="#" class="badge badge-danger">
-														<i class="la la-remove"></i>
-													</a>
-												</td> --%>
 												</tr>
 											</c:forEach>
 										</tbody>
@@ -218,8 +199,9 @@
 					</div>
 					<
 					<div class="modal-footer">
-						<span id="updateerror" style="color: red;"></span> <input
-							type="button" id="updatebtn" class="btn btn-success" value="提交">
+						<span id="updateerror" style="color: red;"></span> 
+						<input type="button" id="select" class="btn btn-info" value="查看成绩">
+						<input type="button" id="updatebtn" class="btn btn-success" value="提交">
 						<input type="button" class="btn btn-secondary"
 							data-dismiss="modal" value="取消">
 					</div>
@@ -230,7 +212,7 @@
 </body>
 <script type="text/javascript" language="javascript">
 	window.onload = function() {
-		goPage(1, 8);
+		goPage(1, 10);
 	};
 </script>
 </html>

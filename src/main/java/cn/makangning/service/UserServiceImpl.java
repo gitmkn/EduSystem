@@ -46,6 +46,7 @@ public class UserServiceImpl implements UserService {
 		Criteria criteria = userExample.createCriteria();
 		criteria.andPhoneEqualTo(phone);
 		userExample.or(criteria);
+		userExample.setOrderByClause("phone desc");
 		return userMapper.selectByExample(userExample);
 	}
 
@@ -59,5 +60,18 @@ public class UserServiceImpl implements UserService {
 	public int update(User user) {
 		// TODO Auto-generated method stub
 		return userMapper.updateByPrimaryKeySelective(user);
+	}
+	
+	@Override
+	public List<User> selectByTitle(String title) {
+		// TODO Auto-generated method stub
+		UserExample example = new UserExample();
+		
+		Criteria criteria1 = example.createCriteria();
+		String name = "%"+title+"%";
+		criteria1.andNameLike(name);
+		
+		example.setOrderByClause("phone desc");
+		return userMapper.selectByExample(example);
 	}
 }

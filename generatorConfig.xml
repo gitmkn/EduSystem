@@ -6,9 +6,9 @@
     <javaModelGenerator targetPackage="cn.makangning.entity" targetProject="ExpectationEduSystem" />
     <sqlMapGenerator targetPackage="cn.makangning.mapper" targetProject="ExpectationEduSystem" />
     <javaClientGenerator targetPackage="cn.makangning.mapper" targetProject="ExpectationEduSystem" type="XMLMAPPER" />
-    <table schema="root" tableName="course">
-      <!-- <columnOverride column="" property="id" /> -->
-    </table>
+    <!-- <table schema="root" tableName="course">
+      <columnOverride column="" property="id" />
+    </table> -->
     
     
    <!--  <table schema="root" tableName="classroom">
@@ -26,5 +26,10 @@
       <columnOverride column="cid" property="course" javaType="cn.makangning.entity.Course"/>
       <columnOverride column="uid" property="user" javaType="cn.makangning.entity.User"/>
     </table> -->
+    
+    <table schema="root" tableName="achievements">
+      <columnOverride column="uid" property="user" javaType="cn.makangning.entity.User"/>
+      <columnOverride column="cid" property="course" javaType="cn.makangning.entity.Course"/>
+    </table>
   </context>
 </generatorConfiguration>

@@ -190,38 +190,38 @@ content属性值 :
 				<li class="nav-item active"><a
 					href="${ pageContext.request.contextPath }/home/index"> <i
 						class="la la-dashboard"></i>
-						<p>首页</p> <span class="badge badge-count">5</span>
+						<p>首页</p> <!-- <span class="badge badge-count">5</span> -->
 				</a></li>
 				<li class="nav-item"><a
 					href="${ pageContext.request.contextPath }/students/student"> <i
 						class="la la-child"></i>
-						<p>学生管理</p> <span class="badge badge-count">14</span>
+						<p>学生管理</p> <span id="students" class="badge badge-success"></span>
 				</a></li>
 				<li class="nav-item"><a
 					href="${ pageContext.request.contextPath }/teacher/teacher"> <i
 						class="la la-smile-o"></i>
-						<p>教师管理</p> <span class="badge badge-count">50</span>
+						<p>教师管理</p> <span id="teachers" class="badge badge-success"></span>
 				</a></li>
 				<li class="nav-item"><a
 					href="${ pageContext.request.contextPath }/course/course"> <i
 						class="la la-th-list"></i>
-						<p>课程管理</p> <span class="badge badge-count">6</span>
+						<p>课程管理</p> <span id="courses" class="badge badge-success"></span>
 				</a></li>
 				<li class="nav-item"><a
 					href="${ pageContext.request.contextPath }/classroom/classroom"> <i
 						class="la la-bank"></i>
-						<p>教室管理</p> <span class="badge badge-success">3</span>
+						<p>教室管理</p> <span id="classrooms" class="badge badge-success"></span>
 				</a></li>
 				<li class="nav-item"><a
 					href="${ pageContext.request.contextPath }/schedule/schedule"> <i
 						class="la la-th"></i>
-						<p>排课管理</p> <span class="badge badge-danger">25</span>
+						<p>排课管理</p> <!-- <span class="badge badge-danger">25</span> -->
 				</a></li>
-				<li class="nav-item"><a
+				<%-- <li class="nav-item"><a
 					href="${ pageContext.request.contextPath }/achievements/achievements">
 						<i class="la la-list-alt"></i>
-						<p>成绩管理</p> <span class="badge badge-danger">25</span>
-				</a></li>
+						<p>成绩管理</p> <!-- <span class="badge badge-danger">25</span> -->
+				</a></li> --%>
 				<li class="nav-item"><a
 					href="${ pageContext.request.contextPath }/cost/cost"> <i
 						class="la la-calculator"></i>
@@ -266,6 +266,39 @@ content属性值 :
 	history.pushState(null, null, document.URL);
 	window.addEventListener('popstate', function() {
 		history.pushState(null, null, document.URL);
+	});
+	
+	$(function(){
+		$.get({
+			url:baseUrl+"/students/studentcount",
+			success:function(data){
+				$("#students").html(data);
+			}
+		});
+	});
+	$(function(){
+		$.get({
+			url:baseUrl+"/teacher/teachercount",
+			success:function(data){
+				$("#teachers").html(data);
+			}
+		});
+	});
+	$(function(){
+		$.get({
+			url:baseUrl+"/course/coursecount",
+			success:function(data){
+				$("#courses").html(data);
+			}
+		});
+	});
+	$(function(){
+		$.get({
+			url:baseUrl+"/classroom/classroomcount",
+			success:function(data){
+				$("#classrooms").html(data);
+			}
+		});
 	});
 </script>
 </html>

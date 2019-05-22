@@ -4,6 +4,8 @@ $(function(){
 	select();
 	add();
 	update();
+	selectFuzzy();//模糊查询
+	selectAchrevements();//
 });
 
 //加载学生列表
@@ -121,4 +123,21 @@ function update(){
 	});
 }
 
+//模糊学生列表
+function selectFuzzy(){
+	$("#searchbtn").click(function(){
+		var title = $("input[name=title]").val();
+		alert(title);
+		$.get({
+			url:baseUrl+"/students/studentFuzzy/"+title,
+		});
+	});
+}
 
+//查看成绩列表
+function selectAchrevements(){
+	$("#select").click(function(){
+		var uid = $("input[name='uid']").val();
+		window.location.href = baseUrl+"/achievements/achievementslist/"+uid;
+	});
+}
