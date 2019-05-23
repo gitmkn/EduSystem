@@ -231,7 +231,7 @@ content属性值 :
 		</div>
 
 	</div>
-<%@ include file="updatepassword.jsp" %>
+<%@ include file="user/updatepassword.jsp" %>
 <%@ include file="user/authorization.jsp" %>
 </body>
 <script

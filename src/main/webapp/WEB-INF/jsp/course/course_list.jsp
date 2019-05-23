@@ -17,7 +17,7 @@
 		<div class="main-panel">
 			<div class="content">
 				<div class="container-fluid">
-					<h4 class="page-title">教室管理
+					<h4 class="page-title">课程管理
 						<!-- <span class="badge badge-success"  style="float:right;" title="刷新">
 							<i class="la la-rotate-right"></i>
 							<select>
@@ -118,11 +118,11 @@
 				<form id="updateform" method="post">
 				<div class="modal-body">
 <!-- ===================================================================================================== -->								
-					
+					<input type="hidden" name="uid" value="${ userinfo.uid }">
 					<div class="form-group form-inline">
 						<label for="inlineinput" class="col-md-3 col-form-label">课程id</label>
 						<div class="col-md-9 p-0">
-							<input type="text" name="cid" class="form-control input-full">
+							<input type="text" name="cid" class="form-control input-full" readonly="readonly">
 						</div>
 					</div>
 					
@@ -145,11 +145,19 @@
 						</div>
 					</div>
 					
+					<div class="form-group form-inline">
+						<label for="inlineinput" class="col-md-3 col-form-label">备课文件</label>
+						<div class="col-md-9 p-0">
+							<input type="file" name="url" class="form-control input-full">
+						</div>
+					</div>
 					
 <!-- ===================================================================================================== -->
 				</div>
 				<div class="modal-footer">
 					<span id="updateerror" style="color: red;"></span>
+					<input type="button" id="upload" class="btn btn-info" value="备课上传">
+					<input type="button" id="select" class="btn btn-info" value="查看备课">
 					<input type="button" id="updatebtn" class="btn btn-success" value="提交">
 					<input type="button" class="btn btn-secondary" data-dismiss="modal" value="取消">
 				</div>

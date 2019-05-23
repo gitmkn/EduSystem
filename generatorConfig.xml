@@ -27,7 +27,12 @@
       <columnOverride column="uid" property="user" javaType="cn.makangning.entity.User"/>
     </table> -->
     
-    <table schema="root" tableName="achievements">
+    <!-- <table schema="root" tableName="achievements">
+      <columnOverride column="uid" property="user" javaType="cn.makangning.entity.User"/>
+      <columnOverride column="cid" property="course" javaType="cn.makangning.entity.Course"/>
+    </table> -->
+    
+    <table schema="root" tableName="file">
       <columnOverride column="uid" property="user" javaType="cn.makangning.entity.User"/>
       <columnOverride column="cid" property="course" javaType="cn.makangning.entity.Course"/>
     </table>

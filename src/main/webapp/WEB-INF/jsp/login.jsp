@@ -22,10 +22,10 @@
 
 		<form method="post">
 			<input name="phone" type="text" placeholder="请输入用户名"
-				autocomplete="off" required="required" />
+				autocomplete="off" required="required" value="13470016983"/>
 			<hr class="hr15">
 			<input name="password" type="password" placeholder="请输入密码"
-				autocomplete="off" required="required" />
+				autocomplete="off" required="required" value="123456" />
 			<hr class="hr15">
 			<input name="code" type="text" placeholder="请输入验证码"
 				autocomplete="off" required="required" /> <img
