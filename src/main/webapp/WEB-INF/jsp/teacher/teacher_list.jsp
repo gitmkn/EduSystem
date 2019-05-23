@@ -199,6 +199,7 @@
 				</div>
 				<div class="modal-footer">
 					<span id="updateerror" style="color: red;"></span>
+					<input type="button" id="select" class="btn btn-info" value="查看备课">
 					<input type="button" id="updatebtn" class="btn btn-success" value="提交">
 					<input type="button" class="btn btn-secondary" data-dismiss="modal" value="取消">
 				</div>

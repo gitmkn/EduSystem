@@ -84,15 +84,19 @@
 												</a>
 											</li> -->
 										</ul>
+										<c:if test="${ userinfo.type == 2 }">
 										<button class="btn btn-primary btn-border btn-round" style="float:right;"   data-toggle="modal" data-target="#modalUpdate">
 										添加
 										</button>
+										</c:if>
 									</p>
 								</div>
 							</div>
 						</div>
 					</div>
+					<c:if test="${ userinfo.type == 2 }">
 					<%@ include file="course_add.jsp" %>
+					</c:if>
 <!-- ================================================================================================ -->	
 				</div>
 			</div>
@@ -110,12 +114,12 @@
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header bg-primary">
-					<h6 class="modal-title"><i class="la la-plus-circle"></i> 教室详细信息修改 </h6>
+					<h6 class="modal-title"><i class="la la-plus-circle"></i> 课程详细信息修改 </h6>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
-				<form id="updateform" method="post">
+				<form id="updateform" method="post"  enctype="multipart/form-data">
 				<div class="modal-body">
 <!-- ===================================================================================================== -->								
 					<input type="hidden" name="uid" value="${ userinfo.uid }">
@@ -139,7 +143,7 @@
 						</div>
 					</div>
 					<div class="form-group form-inline">
-						<label for="inlineinput" class="col-md-3 col-form-label">课程课时</label>
+						<label for="inlineinput" class="col-md-3 col-form-label">课时费用</label>
 						<div class="col-md-9 p-0">
 							<input type="text" name="cmoney" class="form-control input-full">
 						</div>
@@ -148,7 +152,7 @@
 					<div class="form-group form-inline">
 						<label for="inlineinput" class="col-md-3 col-form-label">备课文件</label>
 						<div class="col-md-9 p-0">
-							<input type="file" name="url" class="form-control input-full">
+							<input id="FileUpload" type="file" name="file" class="form-control input-full">
 						</div>
 					</div>
 					
@@ -158,7 +162,9 @@
 					<span id="updateerror" style="color: red;"></span>
 					<input type="button" id="upload" class="btn btn-info" value="备课上传">
 					<input type="button" id="select" class="btn btn-info" value="查看备课">
-					<input type="button" id="updatebtn" class="btn btn-success" value="提交">
+					<c:if test="${ userinfo.type == 2 }">
+					<input type="button" id="updatebtn" class="btn btn-success" value="修改">
+					</c:if>
 					<input type="button" class="btn btn-secondary" data-dismiss="modal" value="取消">
 				</div>
 				</form>

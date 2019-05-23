@@ -102,15 +102,19 @@
 												</a>
 											</li> -->
 									</ul>
+									<c:if test="${ userinfo.type == 2 }">
 									<button class="btn btn-primary btn-border btn-round"
 										style="float: right;" data-toggle="modal"
 										data-target="#modalUpdate">添加</button>
+									</c:if>
 									</p>
 								</div>
 							</div>
 						</div>
 					</div>
+					<c:if test="${ userinfo.type == 2 }">
 					<%@ include file="student_add.jsp"%>
+					</c:if>
 					<!-- ================================================================================================ -->
 				</div>
 			</div>
@@ -201,7 +205,9 @@
 					<div class="modal-footer">
 						<span id="updateerror" style="color: red;"></span> 
 						<input type="button" id="select" class="btn btn-info" value="查看成绩">
+						<c:if test="${ userinfo.type == 2 }">
 						<input type="button" id="updatebtn" class="btn btn-success" value="提交">
+						</c:if>
 						<input type="button" class="btn btn-secondary"
 							data-dismiss="modal" value="取消">
 					</div>

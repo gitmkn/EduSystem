@@ -5,9 +5,9 @@
 </head>
 <script type="text/javascript" src="${pageContext.request.contextPath}/assts/js/core/jquery-3.3.1.js"></script>
 <body>
-<form action="${pageContext.request.contextPath}/upload" method="post" enctype="multipart/form-data">
+<form action="${pageContext.request.contextPath}/file/upload3" method="post" enctype="multipart/form-data">
   <h2>文件上传</h2>
-    文件:<input type="file" name="file1"/><br/><br/>
+    文件:<input type="file" name="file"/><br/><br/>
     用户名：<input type="text" name="username">
     <br/><br/>
     图片：<img src="${ pageContext.request.contextPath }/assets/img/"+${ imgpath }/><br/><br/>

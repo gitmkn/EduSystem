@@ -17,12 +17,12 @@
 <body>
 
 	<div class="login">
-		<div class="message">管理登录</div>
+		<div class="message">期望教育后台管理系统登录</div>
 		<div id="darkbannerwrap"></div>
 
 		<form method="post">
 			<input name="phone" type="text" placeholder="请输入用户名"
-				autocomplete="off" required="required" value="13470016983"/>
+				autocomplete="off" required="required"/>
 			<hr class="hr15">
 			<input name="password" type="password" placeholder="请输入密码"
 				autocomplete="off" required="required" value="123456" />
@@ -35,7 +35,7 @@
 			<hr class="hr15">
 			<input value="登录" type="button">
 			<hr class="hr20">
-			<!-- 帮助 <a onClick="alert('请联系管理员')">忘记密码</a> -->
+			帮助 <a onClick="alert('请联系管理员')">忘记密码</a>
 		</form>
 
 	</div>

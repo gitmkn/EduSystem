@@ -14,7 +14,7 @@
 			<div class="modal-content">
 				<div class="modal-header bg-primary">
 					<h6 class="modal-title">
-						<i class="la la-plus-circle"></i> 添加学生
+						<i class="la la-plus-circle"></i> 添加课程
 					</h6>
 					<button id="close" type="button" class="close" data-dismiss="modal"
 						aria-label="Close">

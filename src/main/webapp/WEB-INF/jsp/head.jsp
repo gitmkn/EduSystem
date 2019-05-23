@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <!-- 
 content属性值 :
@@ -187,6 +187,7 @@ content属性值 :
 				</div>
 			</div> --%>
 			<ul class="nav">
+			<c:if test="${ userinfo.type == 1 || userinfo.type == 2 }">
 				<li class="nav-item active"><a
 					href="${ pageContext.request.contextPath }/home/index"> <i
 						class="la la-dashboard"></i>
@@ -197,36 +198,54 @@ content属性值 :
 						class="la la-child"></i>
 						<p>学生管理</p> <span id="students" class="badge badge-success"></span>
 				</a></li>
+				</c:if>
+				<c:if test="${ userinfo.type == 2 }">
 				<li class="nav-item"><a
 					href="${ pageContext.request.contextPath }/teacher/teacher"> <i
 						class="la la-smile-o"></i>
 						<p>教师管理</p> <span id="teachers" class="badge badge-success"></span>
 				</a></li>
+				</c:if>
+				<c:if test="${ userinfo.type == 1 || userinfo.type == 2 }">
 				<li class="nav-item"><a
 					href="${ pageContext.request.contextPath }/course/course"> <i
 						class="la la-th-list"></i>
 						<p>课程管理</p> <span id="courses" class="badge badge-success"></span>
 				</a></li>
+				</c:if>
+				<c:if test="${ userinfo.type == 1 || userinfo.type == 2 }">
 				<li class="nav-item"><a
 					href="${ pageContext.request.contextPath }/classroom/classroom"> <i
 						class="la la-bank"></i>
 						<p>教室管理</p> <span id="classrooms" class="badge badge-success"></span>
 				</a></li>
+				</c:if>
+				<c:if test="${ userinfo.type == 2 }">
 				<li class="nav-item"><a
 					href="${ pageContext.request.contextPath }/schedule/schedule"> <i
 						class="la la-th"></i>
 						<p>排课管理</p> <!-- <span class="badge badge-danger">25</span> -->
 				</a></li>
+				</c:if>
+				<c:if test="${ userinfo.type == 1 }">
+				<li class="nav-item"><a
+					href="${ pageContext.request.contextPath }/schedule/schedule"> <i
+						class="la la-th"></i>
+						<p>课表查询</p> <!-- <span class="badge badge-danger">25</span> -->
+				</a></li>
+				</c:if>
 				<%-- <li class="nav-item"><a
 					href="${ pageContext.request.contextPath }/achievements/achievements">
 						<i class="la la-list-alt"></i>
 						<p>成绩管理</p> <!-- <span class="badge badge-danger">25</span> -->
 				</a></li> --%>
+				<c:if test="${ userinfo.type == 2 }">
 				<li class="nav-item"><a
 					href="${ pageContext.request.contextPath }/cost/cost"> <i
 						class="la la-calculator"></i>
 						<p>收费管理</p>
 				</a></li>
+				</c:if>
 			</ul>
 		</div>
 

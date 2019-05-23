@@ -51,6 +51,7 @@ public class LoginController {
 			System.out.println(userjson);
 			if(user2.size() > 0) {
 				session.setAttribute("userinfo", user2.get(0));
+				session.setAttribute("usertype", user2.get(0).getType());
 				return "home/index";
 			}
 		} catch (Exception e) {
