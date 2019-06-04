@@ -25,7 +25,7 @@
 				autocomplete="off" required="required"/>
 			<hr class="hr15">
 			<input name="password" type="password" placeholder="请输入密码"
-				autocomplete="off" required="required" value="123456" />
+				autocomplete="off" required="required" />
 			<hr class="hr15">
 			<input name="code" type="text" placeholder="请输入验证码"
 				autocomplete="off" required="required" /> <img

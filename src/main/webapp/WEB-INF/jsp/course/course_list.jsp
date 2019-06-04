@@ -84,7 +84,7 @@
 												</a>
 											</li> -->
 										</ul>
-										<c:if test="${ userinfo.type == 2 }">
+										<c:if test="${ userinfo.type == 2 || userinfo.type == 3 }">
 										<button class="btn btn-primary btn-border btn-round" style="float:right;"   data-toggle="modal" data-target="#modalUpdate">
 										添加
 										</button>
@@ -94,13 +94,13 @@
 							</div>
 						</div>
 					</div>
-					<c:if test="${ userinfo.type == 2 }">
+					<c:if test="${ userinfo.type == 2 || userinfo.type == 3 }">
 					<%@ include file="course_add.jsp" %>
 					</c:if>
 <!-- ================================================================================================ -->	
 				</div>
 			</div>
-			<%-- <%@ include file="../footer.jsp" %> --%>
+			<%@ include file="../footer.jsp" %>
 		</div>
 	</div>
 	
@@ -162,7 +162,7 @@
 					<span id="updateerror" style="color: red;"></span>
 					<input type="button" id="upload" class="btn btn-info" value="备课上传">
 					<input type="button" id="select" class="btn btn-info" value="查看备课">
-					<c:if test="${ userinfo.type == 2 }">
+					<c:if test="${ userinfo.type == 2 || userinfo.type == 3 }">
 					<input type="button" id="updatebtn" class="btn btn-success" value="修改">
 					</c:if>
 					<input type="button" class="btn btn-secondary" data-dismiss="modal" value="取消">

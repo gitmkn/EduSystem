@@ -18,14 +18,14 @@
 			<div class="content">
 				<div class="container-fluid">
 					<h4 class="page-title">教师管理
-						<span class="badge badge-success"  style="float:right;" title="刷新">
-							<!-- <i class="la la-rotate-right"></i> -->
+						<!-- <span class="badge badge-success"  style="float:right;" title="刷新">
+							<i class="la la-rotate-right"></i>
 							<select>
 								<option>123</option>
 								<option>123</option>
 								<option>123</option>
 							</select>
-						</span>
+						</span> -->
 					</h4>
 <!-- ================================================================================================ -->
 					<div class="row">
@@ -115,7 +115,7 @@
 <!-- ================================================================================================ -->	
 				</div>
 			</div>
-			<%-- <%@ include file="../footer.jsp" %> --%>
+			<%@ include file="../footer.jsp" %>
 		</div>
 	</div>
 	

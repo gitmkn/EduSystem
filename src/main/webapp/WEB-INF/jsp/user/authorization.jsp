@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>期望教育教务系统</title>
+<script type="text/javascript" src="${ pageContext.request.contextPath }/assets/js/jquery-3.3.1.js"></script>
 </head>
 <body>
 	<!-- Modal -->
@@ -24,7 +25,7 @@
 				<form id="user" method="post">
 					<div class="modal-body">
 <!-- ===================================================================================================== -->
-
+					<input type="hidden" name="uid" value="${ userinfo.uid }">
 					<div class="form-group form-inline">
 						<label for="inlineinput" class="col-md-3 col-form-label">唯一id</label>
 						<div class="col-md-9 p-0">
@@ -34,64 +35,57 @@
 					<div class="form-group form-inline">
 						<label for="inlineinput" class="col-md-3 col-form-label">姓名</label>
 						<div class="col-md-9 p-0">
-							<input type="text" class="form-control input-full" value="${ userinfo.name }">
+							<input type="text" name="name" class="form-control input-full" value="${ userinfo.name }">
 						</div>
 					</div>
 					<div class="form-group form-inline">
 						<label for="inlineinput" class="col-md-3 col-form-label">性别</label>
-						<c:if test="${ userinfo.sex eq '女' }">
+						
 						<label class="form-radio-label">
-							<input class="form-radio-input" type="radio" name="sex1" value="男"  checked="">
+							<input class="form-radio-input" type="radio" name="sex" value="男">
 							<span class="form-radio-sign">男</span>
 						</label>
-						</c:if>
-						<c:if test="${ userinfo.sex eq '男' }">
 						<label class="form-radio-label ml-3">
-							<input class="form-radio-input" type="radio" name="sex1" value="女" checked="">
+							<input class="form-radio-input" type="radio" name="sex" value="女">
 							<span class="form-radio-sign">女</span>
 						</label>
-						</c:if>
 					</div>
 					 <!-- readonly="readonly"设置该输入框不可输入 -->
 					<div class="form-group form-inline">
 						<label for="inlineinput" class="col-md-3 col-form-label">电话</label>
 						<div class="col-md-9 p-0">
-							<input type="text" class="form-control input-full" value="${ userinfo.phone }" readonly="readonly">
+							<input type="text" name="phone" class="form-control input-full" value="${ userinfo.phone }" readonly="readonly">
 						</div>
 					</div>
 					<div class="form-group form-inline">
 						<label for="inlineinput" class="col-md-3 col-form-label">邮箱</label>
 						<div class="col-md-9 p-0">
-							<input type="email" class="form-control input-full" value="${ userinfo.email }">
+							<input type="email" name="email" class="form-control input-full" value="${ userinfo.email }">
 						</div>
 					</div>
 					<div class="form-group form-inline">
 						<label for="inlineinput" class="col-md-3 col-form-label">地址</label>
 						<div class="col-md-9 p-0">
-							<input type="text" class="form-control input-full" value="${ userinfo.address }">
+							<input type="text" name="address" class="form-control input-full" value="${ userinfo.address }">
 						</div>
 					</div>
 					<div class="form-group form-inline">
 						<label for="inlineinput" class="col-md-3 col-form-label">学校名</label>
 						<div class="col-md-9 p-0">
-							<input type="text" class="form-control input-full" value="${ userinfo.phone }">
+							<input type="text" name="school" class="form-control input-full" value="${ userinfo.phone }">
 						</div>
 					</div>
 					
 					<div class="form-group form-inline">
 						<label for="inlineinput" class="col-md-3 col-form-label">状态</label>
-						<c:if test="${ userinfo.state == '1' }">
 						<label class="form-radio-label">
-							<input class="form-radio-input" type="radio" name="state1" value="1"  checked=""/>
-							<span class="form-radio-sign">正常${ userinfo.state }</span>
+							<input class="form-radio-input" type="radio" name="state" value="1"/>
+							<span class="form-radio-sign">正常</span>
 						</label>
-						</c:if>
-						<c:if test="${ userinfo.state == '0' }">
 						<label class="form-radio-label ml-3">
-							<input class="form-radio-input" type="radio" name="state1" value="0" checked=""/>
-							<span class="form-radio-sign">离司${ userinfo.state }</span>
+							<input class="form-radio-input" type="radio" name="state" value="0" />
+							<span class="form-radio-sign">离司</span>
 						</label>
-						</c:if>
 					</div>
 <!-- ===================================================================================================== -->
 					</div>
@@ -105,4 +99,20 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript">
+$(function(){
+	var sex = '${ userinfo.sex }';
+	var state = '${ userinfo.state }';
+	if (sex == '男') {
+		$("input:radio[name=sex][value='男']").attr("checked", true);
+	} else {
+		$("input:radio[name=sex][value='女']").attr("checked", true);
+	}
+	if (state == '1') {
+		$("input:radio[name=state][value='1']").attr("checked", true);
+	} else {
+		$("input:radio[name=state][value='0']").attr("checked", true);
+	}
+});
+</script>
 </html>

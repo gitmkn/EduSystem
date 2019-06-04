@@ -57,9 +57,28 @@ public class HomeController {
 	 * @return
 	 */
 	@RequestMapping("userupdate")
+	@ResponseBody
 	public int updateUser(User user) {
-		
-		return 1;
+		System.out.println(user);
+		int update = 0;
+		String name = user.getName();
+		Long phone = user.getPhone();
+		if ("".equals(name) && "null".equals(name)) {
+			return 1;
+		}
+		if (phone == null) {
+			return 1;
+		}
+		try {
+			update = userService.update(user);
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("修改时发生错误");
+		}
+		if(update > 0) {
+			return 0;
+		}
+		return 2;
 	}
 	
 	
