@@ -1,9 +1,8 @@
 $(function() {
 	select();
 	update();
-	selectlist()
 	add();
-	deleteCost()
+	deleteCost();
 });
 
 // 查看收费信息
@@ -63,15 +62,17 @@ function update() {
 }
 // 添加收费信息
 function add() {
+	selectlist();
 	$("#add").click(
 			function() {
-				$("input[name='money']").val("");
+				
+				/*$("input[name='money']").val("");*/
 				if ($('input[name=uid]').val() != 0
 						&& $('input[name=cid]').val() != 0) {
 					$("#adderror").html("");
 					$.post({
 						url : baseUrl + "/cost/add",
-						data : $('form').serializeArray(),
+						data : $('#addform').serialize(),
 						beforeSend : function(XMLHttpRequest) {
 							$(this).attr("value", "等待");
 						},
@@ -114,10 +115,10 @@ function selectlist() {
 				list1[i] = data[i];
 			}
 			$("select[name='name']").append(div1);
-			$("input[name='uid']").val(money);
+			/*$("input[name='uid']").val(money);*/
 		}
 	});
-	// 获取金额
+	// 获取
 	$("body").change("select[name='name']", function() {
 		var m = $("select[name='name']").val();
 		for (var i = 0; i < list1.length; i++) {
@@ -139,10 +140,10 @@ function selectlist() {
 				list[i] = data[i];
 			}
 			$("select[name='cname']").append(div2);
-			$("input[name='money']").val(money);
+			/*$("input[name='money']").val(money);*/
 		}
 	});
-	// 获取金额
+	// 获取
 	$("body").change("select[name='cname']", function() {
 		var m = $("select[name='cname']").val();
 		for (var i = 0; i < list.length; i++) {

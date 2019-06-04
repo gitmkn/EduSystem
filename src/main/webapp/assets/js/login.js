@@ -32,7 +32,7 @@ function blur(){
 
 /*提交跳转*/
 function submit(){
-	$("input[type='button']").click(function(){
+	/*$("input[type='button']").click(function(){*/
 		$.post({
 			url:baseUrl+"/login/dologin",
 			data:$('form').serializeArray(),
@@ -42,6 +42,7 @@ function submit(){
 			success:function(data){
 				if("errer" == data){
 					$("input[type='button']").attr("value","密码错误");
+					$("input[name='code']").val("");
 				}else{
 					$("input[type='button']").attr("value","登录");
 					window.document.location.href=baseUrl+"/"+data;
@@ -51,5 +52,5 @@ function submit(){
 				alert("与服务器断开链接");
 			}
 		});
-	});
+	/*});*/
 }
