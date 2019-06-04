@@ -76,7 +76,7 @@ public class ClassroomController {
 		if (classroom1 == null) {
 			int insert = classroomService.insert(classroom);
 //			System.out.println(user);
-			if (insert > 1) {
+			if (insert > 0) {
 				return 0;
 			}
 		} else {

@@ -68,7 +68,7 @@ public class StudentController {
 	 */
 	@RequestMapping("add")
 	@ResponseBody
-	public int login(User user) {
+	public int addStudent(User user) {
 		
 		String name = user.getName();
 		Long phone = user.getPhone();
@@ -80,7 +80,7 @@ public class StudentController {
 		}
 		// 查看电话是否重复
 		List<User> userList = userService.selectByPhone(phone);
-//		System.out.println(userList.size());
+		System.out.println(userList.size());
 		if (userList.size() <= 0) {
 			user.setPassword(new Md5Util().getMd5("123456"));
 			if ("男".equals(user.getSex())) {

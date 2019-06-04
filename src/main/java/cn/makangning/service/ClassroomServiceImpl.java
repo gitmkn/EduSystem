@@ -30,10 +30,10 @@ public class ClassroomServiceImpl implements ClassroomService{
 	public int insert(Classroom record) {
 		// TODO Auto-generated method stub
 		int i = classroomMapper.insert(record);
-		Schedule schedule = new Schedule();
-		schedule.setClassroom(record);
-		int j = scheduleMapper.insert(schedule);
-		return i+j;
+//		Schedule schedule = new Schedule();
+//		schedule.setClassroom(record);
+//		int j = scheduleMapper.insert(schedule);
+		return i;
 	}
 	@Override
 	public Classroom selectByPrimaryKey(Integer rid) {

@@ -51,6 +51,13 @@
 							</div>
 						</div>
 						<div class="form-group form-inline">
+							<label for="inlineinput" class="col-md-3 col-form-label">邮箱</label>
+							<div class="col-md-9 p-0">
+								<input type="text" class="form-control input-full" name="email"
+									placeholder="请输入邮箱">
+							</div>
+						</div>
+						<div class="form-group form-inline">
 							<label for="inlineinput" class="col-md-3 col-form-label">地址</label>
 							<div class="col-md-9 p-0">
 								<input type="text" class="form-control input-full" name="address"

@@ -13,7 +13,7 @@ $(function(){
  */
 function add(){
 	$("#add").click(function(){
-		alert($('form').serializeArray());
+		/*alert($('form').serializeArray());*/
 		$.post({
 			url:baseUrl+"/classroom/add",
 			data:$('form').serializeArray(),

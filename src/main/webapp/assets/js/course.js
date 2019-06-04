@@ -15,7 +15,7 @@ $(function(){
  */
 function add(){
 	$("#add").click(function(){
-		alert($('form').serializeArray());
+		/*alert($('form').serializeArray());*/
 		$.post({
 			url:baseUrl+"/course/add",
 			data:$('form').serializeArray(),
@@ -105,8 +105,8 @@ function fileupload(){
 		formData.append("uid",uid);
 		formData.append("cid",cid);
 		formData.append("file",file);
-		alert(uid);
-		alert(cid);
+		/*alert(uid);
+		alert(cid);*/
 		$.post({
 			url:baseUrl+"/file/fileupload",
 			data:formData,

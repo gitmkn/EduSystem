@@ -26,7 +26,7 @@ function add(){
 	$("#add").click(function(){
 		$.post({
 			url:baseUrl+"/students/add",
-			data:$('form').serializeArray(),
+			data:$('#addform').serializeArray(),
 			beforeSend:function(XMLHttpRequest){ 
 				$(this).attr("value","等待");
 		    }, 

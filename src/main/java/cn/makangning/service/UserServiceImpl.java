@@ -46,7 +46,6 @@ public class UserServiceImpl implements UserService {
 		Criteria criteria = userExample.createCriteria();
 		criteria.andPhoneEqualTo(phone);
 		userExample.or(criteria);
-		userExample.setOrderByClause("phone desc");
 		return userMapper.selectByExample(userExample);
 	}
 

@@ -210,7 +210,7 @@
 </body>
 <script type="text/javascript" language="javascript">
 	window.onload = function() {
-		goPage(1, 5);
+		goPage(1, 10);
 	};
 </script>
 </html>
